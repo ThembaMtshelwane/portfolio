@@ -46,24 +46,17 @@ document.addEventListener('DOMContentLoaded', () => {
       li.textContent = task
       tasks.appendChild(li)
     })
+
+    const gitHubLink = document.createElement('a')
+    gitHubLink.href = element.githublink
+    gitHubLink.textContent = 'See the repo'
+
+    const gitHubListItem = document.createElement('li')
+    gitHubListItem.appendChild(gitHubLink)
+    tasks.appendChild(gitHubListItem)
+
     projectInfo.appendChild(tasks)
 
-    const toggleButton = document.createElement('button')
-    toggleButton.classList.add('btn')
-    toggleButton.textContent = '...Show More'
-    projectInfo.appendChild(toggleButton)
-
-    toggleButton.addEventListener('click', function () {
-      hiddenItems.forEach((item) => {
-        if (item.style.display === 'none' || item.style.display === '') {
-          item.style.display = 'list-item'
-          toggleButton.textContent = 'Show Less'
-        } else {
-          item.style.display = 'none'
-          toggleButton.textContent = 'Show More'
-        }
-      })
-    })
     const projectTech = document.createElement('ul')
     projectTech.classList.add('project-tech')
     element.techStack.forEach((tech) => {

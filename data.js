@@ -34,19 +34,19 @@ const projectData = [
     githublink: 'https://github.com/ThembaMtshelwane/exam-prep-students',
     image: '/images/student/student-1.PNG',
   },
-  {
-    name: 'Wordle',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express'],
-    summary: 'This is a simple clone of the Wordle game.',
-    responsibilities: [
-      'Implemented the UI.',
-      'Allow a user to enter a word 5 letter word',
-      'Word target word updates with each refresh.',
-    ],
-    website: '',
-    githublink: 'https://github.com/ThembaMtshelwane/wordle-clone',
-    image: '/images/wordle/wordle.PNG',
-  },
+  // {
+  //   name: 'Wordle',
+  //   techStack: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express'],
+  //   summary: 'This is a simple clone of the Wordle game.',
+  //   responsibilities: [
+  //     'Implemented the UI.',
+  //     'Allow a user to enter a word 5 letter word',
+  //     'Word target word updates with each refresh.'
+  //   ],
+  //   website: '',
+  //   githublink: 'https://github.com/ThembaMtshelwane/wordle-clone',
+  //   image: '/images/wordle/wordle.PNG'
+  // },
   {
     name: 'Lifestyle Survey',
     techStack: ['TypeScript', 'ReactJS 18', 'NextJS 14', 'CSS', 'Firebase'],
@@ -60,20 +60,20 @@ const projectData = [
     githublink: 'https://github.com/ThembaMtshelwane/survey',
     image: '/images/survey/survey.PNG',
   },
-  {
-    name: 'To-Do App',
-    techStack: ['TypeScript', 'ReactJS 18', 'NextJS 14', 'CSS', 'Firebase'],
-    summary:
-      'This website is a simple To-Do App. A user can login and manage thier tasks',
-    responsibilities: [
-      'They can add, update and delete tasks.',
-      "The tasks are stored on Google's Firestore database.",
-      'Authentication is implemented using Firebases Authentication services.',
-    ],
-    website: 'https://blog-preview-card-main-neon.vercel.app/',
-    githublink: 'https://github.com/ThembaMtshelwane/to-do-app',
-    image: '/images/blog-post/blog-post.PNG',
-  },
+  // {
+  //   name: 'To-Do App',
+  //   techStack: ['TypeScript', 'ReactJS 18', 'NextJS 14', 'CSS', 'Firebase'],
+  //   summary:
+  //     'This website is a simple To-Do App. A user can login and manage thier tasks',
+  //   responsibilities: [
+  //     'They can add, update and delete tasks.',
+  //     "The tasks are stored on Google's Firestore database.",
+  //     'Authentication is implemented using Firebases Authentication services.'
+  //   ],
+  //   website: 'https://blog-preview-card-main-neon.vercel.app/',
+  //   githublink: 'https://github.com/ThembaMtshelwane/to-do-app',
+  //   image: '/images/blog-post/blog-post.PNG'
+  // },
   {
     name: 'Blog Post Card',
     techStack: ['HTML', 'CSS', 'JavaScript'],
