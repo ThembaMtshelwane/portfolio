@@ -38,8 +38,19 @@ a {
   text-decoration: none;
 }
 
+.contactContainer {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
 .contact-me {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+}
+
+#dropdownMenu p {
+  display: block;
 }
 
 .top-section {
@@ -185,11 +196,22 @@ li {
 .btn:hover {
   background-color: #0056b3;
 }
+.contactInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.contactInfo h3 {
+  margin-bottom: 15px;
+}
 
 @media screen and (min-width: 950px) {
   .top-section,
   .projects-section,
-  nav {
+  nav,
+  .contactInfo {
     width: 90%;
     max-width: 850px;
   }
@@ -211,4 +233,8 @@ li {
   /* .project-info {
     width: 450px;
   } */
+  .contactInfo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
