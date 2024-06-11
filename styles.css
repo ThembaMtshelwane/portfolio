@@ -38,21 +38,6 @@ a {
   text-decoration: none;
 }
 
-.contactContainer {
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-}
-.contact-me {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
-}
-
-#dropdownMenu p {
-  display: block;
-}
-
 .top-section {
   border: 2px solid rgba(0, 128, 0, 0.171);
   background-color: rgba(0, 128, 0, 0.171);
@@ -74,14 +59,17 @@ a {
 
 h1 {
   margin-bottom: 10px;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
 }
 
 .profile-summary {
   margin-bottom: 10px;
   padding: 15px;
-  /* border: 2px solid red; */
   text-align: justify;
   width: 100%;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
 }
 
 .tech-stack {
@@ -140,6 +128,7 @@ li {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  margin-left: 10px;
   padding: 10px;
   width: 100%;
 }
@@ -150,13 +139,16 @@ li {
   width: 100%;
   max-width: 250px;
   max-height: 250px;
+  font-size: 1.5rem;
 }
 
 .project-summary {
   /* border: 2px solid red; */
   height: fit-content;
   width: 100%;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
 }
 
 .tech-stack,
@@ -179,23 +171,19 @@ li {
 .responsibilities li {
   margin-top: 5px;
   margin-left: 20px;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
-.btn {
-  display: block;
-  margin: 10px 0;
-  padding: 10px;
+.seeRepo {
   background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  padding: 5px;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+.seeRepo:hover {
+  transform: scale(12);
 }
+
 .contactInfo {
   width: 100%;
   display: flex;

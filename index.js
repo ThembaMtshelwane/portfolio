@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gitHubLink = document.createElement('a')
     gitHubLink.href = element.githublink
     gitHubLink.textContent = 'See the repo'
+    gitHubLink.classList.add('seeRepo')
 
     const gitHubListItem = document.createElement('li')
     gitHubListItem.appendChild(gitHubLink)
