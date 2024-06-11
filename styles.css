@@ -71,8 +71,8 @@ h1 {
   padding: 15px;
   text-align: justify;
   width: 100%;
-  letter-spacing: 0.2rem;
-  word-spacing: 0.5rem;
+  /* letter-spacing: 0.2rem; */
+  /* word-spacing: 0.5rem; */
 }
 
 .tech-stack {
@@ -199,6 +199,10 @@ li {
 }
 
 @media screen and (min-width: 950px) {
+  .profile-summary {
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+  }
   .top-section,
   .projects-section,
   nav,
