@@ -67,4 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     projectInfo.appendChild(projectTech)
   })
+
+  const form = document.querySelector('form')
+  form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('contact_service', 'contact_form', form).then(
+      () => {
+        console.log('SUCCESS!')
+      },
+      (error) => {
+        console.log('FAILED...', error)
+      }
+    )
+  })
 })

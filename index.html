@@ -11,6 +11,18 @@
     />
     <link class="logo" rel="icon" href="images/logo.PNG" type="image/x-icon" />
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: '76IDYM5uxNnPynikr',
+        })
+      })()
+    </script>
     <script src="./data.js" defer></script>
     <script src="./index.js" defer></script>
   </head>
@@ -56,10 +68,35 @@
         </ul>
       </section>
       <section class="projects-section" id="projects-section"></section>
-      <section class="contactInfo">
-        <h3>Email : Thembamm3@gmail.com</h3>
-        <h3>Phone : +27 84 480 4140</h3>
-      </section>
+      <footer>
+        <form action="">
+          <p class="contact-me">Contact Me</p>
+
+          <section class="userNames">
+            <section class="firstName">
+              <label for="firstName">First Name</label>
+              <input id="firstName" name="firstName" type="text" required />
+            </section>
+
+            <section class="lastName">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" name="lastName" type="text" required />
+            </section>
+          </section>
+
+          <label for="emailAddress">Email Address</label>
+          <input id="emailAddress" name="emailAddress" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+
+          <button class="submit-button">SUBMIT</button>
+        </form>
+        <section class="contactInfo">
+          <h3>Email : Thembamm3@gmail.com</h3>
+          <h3>Phone : +27 84 480 4140</h3>
+        </section>
+      </footer>
     </main>
   </body>
 </html>
