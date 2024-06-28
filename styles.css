@@ -248,6 +248,33 @@ textarea {
   font-weight: 700;
 }
 
+.messageContainer {
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success,
+.failure {
+  background-color: rgb(32, 142, 32);
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.failure {
+  background-color: rgb(233, 18, 18);
+}
+
+.displayNone {
+  display: none;
+}
+
 @media screen and (min-width: 950px) {
   .profile-summary {
     letter-spacing: 0.2rem;

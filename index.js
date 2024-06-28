@@ -74,11 +74,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     emailjs.sendForm('contact_service', 'contact_form', form).then(
       () => {
-        console.log('SUCCESS!')
+        const successMessage = document.createElement('p')
+        successMessage.textContent = 'Message received'
+        successMessage.classList.add('success')
+
+        const messageContainer = document.getElementById('messageContainer')
+        messageContainer.classList.add('messageContainer')
+        messageContainer.appendChild(successMessage)
+        setTimeout(() => {
+          messageContainer.classList.add('displayNone')
+        }, 1500)
       },
       (error) => {
-        console.log('FAILED...', error)
+        const errorMessage = document.createElement('p')
+        errorMessage.textContent = 'Error: ' + error
+        errorMessage.classList.add('failure')
+
+        const messageContainer = document.getElementById('messageContainer')
+        messageContainer.classList.add('messageContainer')
+        messageContainer.appendChild(errorMessage)
+        setTimeout(() => {
+          messageContainer.classList.add('displayNone')
+        }, 1500)
       }
     )
+    form.reset()
   })
 })
