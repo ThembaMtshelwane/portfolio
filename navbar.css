@@ -59,3 +59,23 @@ nav li:first-child {
 .sidebar a {
   width: 100%;
 }
+
+#menu-icon {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .sidebar {
+    width: 100%;
+  }
+}
