@@ -21,7 +21,7 @@ const projectData = [
     ],
     website: 'https://exam-prep-roan.vercel.app/',
     githublink: 'https://github.com/ThembaMtshelwane/exam-prep',
-    image: '/images/lecturer/lecturer-1.PNG',
+    image: '/images/projects/lecturer/lecturer-1.PNG',
   },
   {
     name: 'Exam Prep - Student Website',
@@ -36,7 +36,7 @@ const projectData = [
     ],
     website: 'https://exam-prep-students.vercel.app',
     githublink: 'https://github.com/ThembaMtshelwane/exam-prep-students',
-    image: '/images/student/student-1.PNG',
+    image: '/images/projects/student/student-1.PNG',
   },
   // {
   //   name: 'Wordle',
@@ -49,7 +49,7 @@ const projectData = [
   //   ],
   //   website: '',
   //   githublink: 'https://github.com/ThembaMtshelwane/wordle-clone',
-  //   image: '/images/wordle/wordle.PNG'
+  //   image: '/images/projects/wordle/wordle.PNG'
   // },
   {
     name: 'Lifestyle Survey',
@@ -64,7 +64,7 @@ const projectData = [
     ],
     website: 'https://survey-beige-five.vercel.app/',
     githublink: 'https://github.com/ThembaMtshelwane/survey',
-    image: '/images/survey/survey.PNG',
+    image: '/images/projects/survey/survey.PNG',
   },
 
   // {
@@ -79,7 +79,7 @@ const projectData = [
   //   ],
   //   website: 'https://blog-preview-card-main-neon.vercel.app/',
   //   githublink: 'https://github.com/ThembaMtshelwane/to-do-app',
-  //   image: '/images/blog-post/blog-post.PNG'
+  //   image: '/images/projects/blog-post/blog-post.PNG'
   // },
   {
     name: 'Recipe Page',
@@ -92,7 +92,7 @@ const projectData = [
     ],
     website: 'https://recipe-page-main-lake-seven.vercel.app/',
     githublink: 'https://github.com/ThembaMtshelwane/recipe-page-main',
-    image: '/images/recipe-page/recipe-page.jpg',
+    image: '/images/projects/recipe-page/recipe-page.jpg',
   },
   {
     name: 'Contact Form',
@@ -106,7 +106,7 @@ const projectData = [
     ],
     website: 'https://contact-form-main-pied.vercel.app/',
     githublink: 'https://github.com/ThembaMtshelwane/contact-form-main',
-    image: '/images/contact-form/contact-form.jpg',
+    image: '/images/projects/contact-form/contact-form.jpg',
   },
 
   {
@@ -120,7 +120,7 @@ const projectData = [
     ],
     website: 'https://blog-preview-card-main-neon.vercel.app/',
     githublink: 'https://github.com/ThembaMtshelwane/blog-preview-card-main',
-    image: '/images/blog-post/blog-post.PNG',
+    image: '/images/projects/blog-post/blog-post.PNG',
   },
   {
     name: 'Results Summary Component',
@@ -134,7 +134,7 @@ const projectData = [
     website: 'https://results-summary-component-main-nine-bay.vercel.app/',
     githublink:
       'https://github.com/ThembaMtshelwane/results-summary-component-main',
-    image: '/images/result-summary-component/result-summary-component.PNG',
+    image: '/images/projects/result-summary-component/result-summary-component.PNG',
   },
   {
     name: 'FAQ Accordion',
@@ -149,7 +149,7 @@ const projectData = [
     ],
     website: 'https://faq-accordion-main-ecru.vercel.app/',
     githublink: 'https://github.com/ThembaMtshelwane/faq-accordion-main',
-    image: '/images/faq-accordian/faq-a.PNG',
+    image: '/images/projects/faq-accordian/faq-a.PNG',
   },
   {
     name: 'Age Calculator App',
@@ -164,7 +164,7 @@ const projectData = [
     ],
     website: 'https://age-calculator-app-main-blond.vercel.app/',
     githublink: 'https://github.com/ThembaMtshelwane/age-calculator-app-main',
-    image: '/images/age-calculator/age-calculator.PNG',
+    image: '/images/projects/age-calculator/age-calculator.PNG',
   },
   {
     name: 'Newsletter sign-up form with success message',
@@ -182,6 +182,6 @@ const projectData = [
       'https://newsletter-sign-up-with-success-message-main-lilac.vercel.app/',
     githublink:
       'https://github.com/ThembaMtshelwane/newsletter-sign-up-with-success-message-main',
-    image: '/images/news-letter/news-letter.PNG',
+    image: '/images/projects/news-letter/news-letter.PNG',
   },
 ]
