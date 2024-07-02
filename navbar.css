@@ -7,6 +7,10 @@
 
 nav {
   background-color: black;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
 }
 
 nav ul {
@@ -74,7 +78,7 @@ nav li:first-child {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 400px) {
   .sidebar {
     width: 100%;
   }
