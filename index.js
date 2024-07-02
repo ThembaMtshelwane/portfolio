@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const projectsSection = document.getElementById('projects-section')
 
+  const menuIcon = document.getElementById('menu-icon')
+  const sidebar = document.querySelector('.sidebar')
+  const closeIcon = document.getElementById('close-icon')
+
+  menuIcon.addEventListener('click', () => {
+    menuIcon.style.display = 'none'
+    sidebar.style.display = 'flex'
+  })
+
+  closeIcon.addEventListener('click', () => {
+    menuIcon.style.display = 'block'
+    sidebar.style.display = 'none'
+  })
+
   let data = []
   if (typeof projectData !== 'undefined') {
     data = projectData
