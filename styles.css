@@ -37,36 +37,6 @@ a {
   text-decoration: none;
 }
 
-.top-section {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 10px 0px 20px 0px;
-}
-
-.profile-summary {
-  margin-bottom: 10px;
-  padding: 15px;
-  text-align: justify;
-  width: 100%;
-  /* letter-spacing: 0.2rem; */
-  /* word-spacing: 0.5rem; */
-}
-
-.tech-stack {
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-li {
-  /* border: 2px solid red; */
-  padding: 5px;
-  border-radius: 2px;
-}
 
 .projects-section {
   /* border: 2px solid blue; */
@@ -240,20 +210,12 @@ textarea {
 }
 
 @media screen and (min-width: 950px) {
-  .profile-summary {
-    letter-spacing: 0.2rem;
-    word-spacing: 0.5rem;
-  }
   .top-section,
   .projects-section,
   .contactInfo,
   footer {
     width: 90%;
     max-width: 850px;
-  }
-  .profile-summary {
-    text-align: center;
-    width: 90%;
   }
   .project-n {
     /* background-color: blue; */
