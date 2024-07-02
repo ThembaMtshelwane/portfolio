@@ -11,14 +11,14 @@
 }
 
 :root {
-  --dark-blue: rgb(2, 2, 19);
-  --dark--blue-2: rgb(3, 3, 73);
+  --dark-blue: rgb(171, 52, 141);
+  --dark-blue-2: rgb(3, 3, 73);
   --cool-blue: #007bff;
   --white: rgb(255, 255, 255);
 }
 
 body {
-  background-color: var(--dark-blue);
+  background-color: rgb(5, 10, 48);
   height: 100vh;
 }
 
@@ -37,9 +37,8 @@ a {
   text-decoration: none;
 }
 
-
 .projects-section {
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   margin-top: 10px;
 }
 

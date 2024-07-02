@@ -42,16 +42,16 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark--blue-2);
+  background-color: var(--cool-blue);
   border-radius: 20px;
 }
 
 .contact-list li :hover {
   transform: scale(1.05);
+  box-shadow: 13px 14px 60px 0px var(--cool-blue);
 }
 
 .profile-image-container {
-  /* border: 2px solid yellow; */
   width: 40%;
   display: flex;
   align-items: center;
@@ -61,21 +61,15 @@
 .profile-image {
   width: 70%;
   border-radius: 50%;
-  box-shadow: 13px 14px 60px 0px var(--dark--blue-2);
+  box-shadow: 13px 14px 60px 0px var(--cool-blue);
 }
 
-.technologies,
-.about {
+.sub-heading {
   margin: auto;
   padding: 20px;
   width: 50%;
   text-align: center;
   font-size: 2.5rem;
-}
-
-.my-skills {
-  width: 100%;
-  height: 90vh;
 }
 
 .tech-stack {
@@ -96,13 +90,13 @@
 }
 
 .tech-stack li {
-  border: 2px solid var(--dark--blue-2);
+  border: 2px solid var(--cool-blue);
   margin: 20px;
 }
 
 .tech-stack li:hover {
-  box-shadow: 13px 14px 60px 0px var(--dark--blue-2);
-  transform: scale(1.2);
+  box-shadow: 13px 14px 60px 0px var(--cool-blue);
+  transform: scale(1.02);
 }
 
 .about-section,
@@ -112,13 +106,13 @@
 
 .profile-summary {
   text-align: center;
-  width: 60%;
+  width: 90%;
   height: 70%;
   margin: auto;
   padding: 50px;
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   word-spacing: 0.5rem;
-  border-radius: 50px;
-  box-shadow: 13px 14px 60px 0px var(--dark--blue-2);
+  border-radius: 40px;
+  box-shadow: 13px 14px 60px 0px var(--cool-blue);
 }

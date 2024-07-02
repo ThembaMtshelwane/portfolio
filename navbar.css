@@ -1,7 +1,7 @@
 :root {
   --dark-blue: rgb(2, 2, 19);
   --dark--blue-2: rgb(3, 3, 73);
-  --cool-blue: #007bff;
+  --cool-blue: rgb(0, 123, 255);
   --white: rgb(255, 255, 255);
 }
 
@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--dark--blue-2);
+  background-color: var(--cool-blue);
   transform: scale(1.02);
 }
 
