@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const a = document.createElement('a')
     a.href = element.website
     a.target = 'blank'
-    a.classList.add('image')
+    a.classList.add('image-link')
 
     const projectImage = document.createElement('img')
     projectImage.classList.add('project-image')
@@ -54,12 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
     projectInfo.appendChild(projectSummary)
 
     const tasks = document.createElement('ul')
-    tasks.classList.add('responsibilities')
-    element.responsibilities.forEach((task) => {
-      const li = document.createElement('li')
-      li.textContent = task
-      tasks.appendChild(li)
-    })
+    // tasks.classList.add('responsibilities')
+    // element.responsibilities.forEach((task) => {
+    //   const li = document.createElement('li')
+    //   li.textContent = task
+    //   tasks.appendChild(li)
+    // })
 
     const gitHubLink = document.createElement('a')
     gitHubLink.href = element.githublink

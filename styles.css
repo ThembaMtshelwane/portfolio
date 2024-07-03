@@ -11,215 +11,46 @@
 }
 
 :root {
-  --dark-blue: rgb(171, 52, 141);
+  --dark-blue: rgba(2, 7, 25, 0.982);
   --dark-blue-2: rgb(3, 3, 73);
   --cool-blue: #007bff;
   --white: rgb(255, 255, 255);
 }
 
 body {
-  background-color: rgb(5, 10, 48);
+  background-color: var(--dark-blue);
   height: 100vh;
 }
 
 main {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
-
-  position: relative;
-  top: 50px;
 }
 
 a {
   text-decoration: none;
 }
 
-.projects-section {
-  border: 2px solid blue;
-  margin-top: 10px;
-}
-
-.project-n {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-bottom: 25px;
+.sub-heading {
+  margin: auto;
   padding: 20px;
-  width: 100%;
-  min-height: 350px;
-}
-
-.image {
-  /* border: 2px solid green; */
-  display: flex;
-  align-items: center;
-  width: 100%;
-  /* height: 100%; */
-  /* max-height: 290px; */
-}
-
-.project-image {
-  /* border: 2px solid red; */
-  height: 290px;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.image:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
-
-.project-info {
-  /* border: 2px solid rgba(255, 0, 0, 0.171); */
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding: 10px;
-  width: 100%;
-}
-
-.project-name {
-  /* border: 2px solid red; */
-  margin-bottom: 10px;
-  width: 100%;
-  max-width: 250px;
-  max-height: 250px;
-  font-size: 1.5rem;
-}
-
-.project-summary {
-  /* border: 2px solid red; */
-  height: fit-content;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-}
-
-.project-tech {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  width: 100%;
-}
-
-.tech-stack li,
-.project-tech li {
-  margin-top: 5px;
-  margin-right: 5px;
+  width: 50%;
   text-align: center;
-}
-
-.responsibilities li {
-  margin-top: 5px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-.seeRepo {
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.contactInfo {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-}
-
-.contactInfo h3 {
-  margin-bottom: 15px;
-}
-
-footer {
-  padding: 20px;
-  width: 100%;
-}
-.contact-me {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  width: 100%;
-  margin-bottom: 15px;
-  color: black;
-  padding: 10px;
-}
-
-label {
-  margin-bottom: 5px;
-}
-
-textarea {
-  width: 100%;
-  height: 150px;
-  margin-bottom: 15px;
-  padding: 10px;
-  color: black;
-}
-
-.submit-button {
-  width: 100px;
-  height: 60px;
-  margin-bottom: 15px;
-  color: black;
-  font-weight: 700;
-}
-
-.messageContainer {
-  width: 100%;
-  text-align: center;
-  height: 60px;
-  margin-bottom: 15px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.success,
-.failure {
-  background-color: rgb(32, 142, 32);
-  width: 250px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.failure {
-  background-color: rgb(233, 18, 18);
-}
-
-.displayNone {
-  display: none;
+  font-size: 2.5rem;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 950px) {
-  .top-section,
-  .projects-section,
-  .contactInfo,
-  footer {
-    width: 90%;
-    max-width: 850px;
+  main {
+    max-width: 1440px;
   }
-  .project-n {
-    /* background-color: blue; */
-    flex-direction: row;
-    justify-content: space-between;
-  }
+
   .userNames {
     display: flex;
     flex-direction: row;

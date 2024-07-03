@@ -1,0 +1,18 @@
+.about-section {
+  /* border: 2px solid; */
+  height: 100vh;
+  max-height: 550px;
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.profile-summary {
+  font-size: 1.3rem;
+  /* border: 2px solid; */
+  text-align: center;
+  width: 90%;
+
+  margin: 15px auto;
+  padding: 10px;
+}

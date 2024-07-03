@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="/navbar.css" />
     <link rel="stylesheet" href="./intro.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./tech.css" />
+    <link rel="stylesheet" href="./projects.css" />
+    <link rel="stylesheet" href="./footer.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
@@ -48,14 +52,14 @@
           </a>
         </li>
         <li><a href="#about-section">About</a></li>
-        <li><a href="#my-skills">Tech</a></li>
+        <li><a href="#tech-section">Tech</a></li>
         <li><a href="#projects-section">Projects</a></li>
         <li><a href="#contact-me">Contact Me</a></li>
       </ul>
       <ul>
-        <li><a href="/">Logo</a></li>
+        <li><a href="#intro-section">Logo</a></li>
         <li class="hideOnMobile"><a href="#about-section">About</a></li>
-        <li class="hideOnMobile"><a href="#my-skills">Tech</a></li>
+        <li class="hideOnMobile"><a href="#tech-section">Tech</a></li>
         <li class="hideOnMobile"><a href="#projects-section">Projects</a></li>
         <li class="hideOnMobile"><a href="#contact-me">Contact Me</a></li>
         <li id="menu-icon">
@@ -76,15 +80,8 @@
       </ul>
     </nav>
     <main>
-      <section class="intro-section">
-        <section class="my-info">
-          <h1 id="name">Themba Mtshelwane</h1>
-          <h2 id="position">Frontend Web Developer</h2>
-          <ul class="contact-list">
-            <li><a href="">GitHub</a></li>
-            <li><a href="">LinkedIn</a></li>
-          </ul>
-        </section>
+
+      <section class="intro-section" id="intro-section">
         <section class="profile-image-container">
           <img
             class="profile-image"
@@ -92,10 +89,19 @@
             alt=""
           />
         </section>
+        <section class="my-info">
+          <h1 id="name">Themba Mtshelwane</h1>
+          <h2 id="position">Frontend Web Developer</h2>
+          <ul class="contact-list">
+            <li><a href="https://github.com/ThembaMtshelwane">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/themba-mtshelwane/">LinkedIn</a></li>
+          </ul>
+        </section>
       </section>
 
+
       <section class="about-section" id="about-section">
-        <h2 class="about sub-heading">About</h2>
+        <h2 class="sub-heading">About</h2>
         <p class="profile-summary" id="profile-summary">
           Recent Information Engineering graduand from Wits University.
           Experienced in front-end and full-stack development, UI/UX design, and
@@ -104,9 +110,10 @@
         </p>
       </section>
 
-      <section class="my-skills" id="my-skills">
-        <h2 class="technologies sub-heading">Technologies</h2>
-        <ul class="tech-stack">
+
+      <section class="tech-section" id="tech-section">
+        <h2 class="sub-heading">Technologies</h2>
+        <ul class="tech-list">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
@@ -119,9 +126,13 @@
           <li>Chakra UI</li>
         </ul>
       </section>
+
+
       <section class="projects-section" id="projects-section">
-        <h2 class="projects sub-heading">Projects</h2>
+        <h2 class="sub-heading">Projects</h2>
       </section>
+
+
       <footer>
         <form action="">
           <p class="contact-me" id="contact-me">Contact Me</p>
