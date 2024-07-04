@@ -5,33 +5,23 @@
   /* justify-content: space-between; */
 }
 
-.contactInfo h3 {
-  margin-bottom: 15px;
+footer {
+  width: 90%;
+  margin: 10px 20px;
 }
 
-footer {
-  padding: 20px;
-  width: 100%;
-}
-.contact-me {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
 form {
   display: flex;
   flex-direction: column;
-}
-
-label {
-  margin-bottom: 5px;
+  margin-top: 50px;
 }
 
 input {
   width: 100%;
   margin-bottom: 15px;
-  color: black;
+  color: #000000;
   padding: 10px;
+  border-radius: 20px;
 }
 
 label {
@@ -44,6 +34,7 @@ textarea {
   margin-bottom: 15px;
   padding: 10px;
   color: black;
+  border-radius: 20px;
 }
 
 .submit-button {
@@ -96,10 +87,13 @@ textarea:hover,
   display: none;
 }
 
+h3 {
+  margin: 15px 0px;
+}
+
 @media screen and (min-width: 950px) {
   footer {
     max-width: 750px;
-    margin-top: 150px;
   }
 
   .userNames {

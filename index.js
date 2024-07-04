@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projectInfo.appendChild(projectSummary)
 
     const tasks = document.createElement('ul')
-    // tasks.classList.add('responsibilities')
+    tasks.classList.add('responsibilities')
     // element.responsibilities.forEach((task) => {
     //   const li = document.createElement('li')
     //   li.textContent = task

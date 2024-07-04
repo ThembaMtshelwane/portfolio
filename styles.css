@@ -40,7 +40,7 @@ a {
 .sub-heading {
   margin: auto;
   padding: 20px;
-  width: 50%;
+  /* width: 50%; */
   text-align: center;
   font-size: 2.5rem;
   margin-top: 50px;
@@ -49,6 +49,9 @@ a {
 @media screen and (min-width: 950px) {
   main {
     max-width: 1440px;
+  }
+  .sub-heading {
+    width: 50%;
   }
 
   .userNames {
