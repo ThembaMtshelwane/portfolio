@@ -8,7 +8,7 @@ const Navbar = () => {
   const handleClick = () => setToggle(!toggle)
 
   return (
-    <nav className="section-container">
+    <nav>
       <ul className="mobile-navbar">
         <li>
           <a href="#hero">Logo</a>

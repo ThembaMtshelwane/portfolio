@@ -27,6 +27,17 @@ body {
   height: 100vh;
 
   color: var(--text-colour);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+
+  min-width: 360px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 a {
@@ -43,5 +54,5 @@ ul {
 .section-container {
   background-color: #010211;
   height: 100vh;
-  opacity: 0.9;
+  opacity: 0.97;
 }
