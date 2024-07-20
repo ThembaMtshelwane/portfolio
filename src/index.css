@@ -20,15 +20,28 @@ html {
 
 body {
   position: relative;
-  background-image: url("./assets/general-images/background-image.webp");
+  background-image: url('./assets/general-images/background-image.webp');
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
   height: 100vh;
+
+  color: var(--text-colour);
+}
+
+a {
+  color: var(--text-colour);
+  text-decoration: none;
+  display: flex;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
 }
 
 .section-container {
   background-color: #010211;
   height: 100vh;
-  opacity: 0.97;
+  opacity: 0.9;
 }

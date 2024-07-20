@@ -1,7 +1,7 @@
-import React from "react";
-
+import React from 'react'
+import HeroSection from './Components/HeroSection/HeroSection'
 const App = () => {
-  return <>Portfolio</>;
-};
+  return <HeroSection />
+}
 
-export default App;
+export default App
