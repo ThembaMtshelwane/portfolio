@@ -3,10 +3,10 @@
 }
 
 .background-colour {
+  background-color: var(--primary-colour);
   position: fixed;
-  z-index: -1;
-  opacity: 0.5;
   height: 100vh;
   width: 100vw;
-  background-color: var(--primary-colour);
+  z-index: -1;
+  opacity: 0.96;
 }
