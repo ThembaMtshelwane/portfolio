@@ -1,6 +1,6 @@
-import './hero.css'
-import Navbar from './Navbar'
-import TechParade from './TechParade'
+import "./hero.css";
+import Navbar from "./Navbar";
+import TechParade from "./TechParade";
 
 const HeroSection = () => {
   return (
@@ -17,6 +17,6 @@ const HeroSection = () => {
       </section>
       <TechParade />
     </section>
-  )
-}
-export default HeroSection
+  );
+};
+export default HeroSection;
