@@ -1,7 +1,14 @@
-import React from 'react'
-import HeroSection from './Components/HeroSection/HeroSection'
-const App = () => {
-  return <HeroSection />
-}
+import React from "react";
+import HeroSection from "./Components/HeroSection/HeroSection";
+import AboutSection from "./Components/AboutSection/AboutSection.tsx";
 
-export default App
+const App = () => {
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+    </>
+  );
+};
+
+export default App;

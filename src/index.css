@@ -20,14 +20,14 @@ html {
 
 body {
   position: relative;
-  background-image: url('./assets/general-images/background-image.webp');
+  background-image: url("./assets/general-images/background-image.webp");
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
   height: 100vh;
 
   color: var(--text-colour);
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 
   min-width: 360px;
 }
@@ -55,4 +55,5 @@ ul {
   background-color: #010211;
   height: 100vh;
   opacity: 0.97;
+  border: 2px solid red;
 }

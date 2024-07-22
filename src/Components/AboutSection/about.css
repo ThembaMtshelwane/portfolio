@@ -1,0 +1,21 @@
+.about-section {
+  display: flex;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  border: 2px solid blue;
+  height: 50%;
+  padding: 20px;
+}
+
+.about-text-container h3 {
+  margin-bottom: 20px;
+}
+.about-text-container p {
+  text-align: justify;
+}
