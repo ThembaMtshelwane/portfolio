@@ -186,3 +186,36 @@ export const projectData = [
     image: `${path}/news-letter/news-letter.PNG`,
   },
 ];
+
+export const skillsData = {
+  frontend: [
+    {
+      name: "HTML",
+      years: "2",
+    },
+    {
+      name: "CSS",
+      years: "2",
+    },
+    {
+      name: "JacaScript",
+      years: "2",
+    },
+    {
+      name: "TypeScript",
+      years: "1",
+    },
+    {
+      name: "ReactJS",
+      years: "1.5",
+    },
+    {
+      name: "NextJS",
+      years: "1",
+    },
+    {
+      name: "ChakraUI",
+      years: "1",
+    },
+  ],
+};

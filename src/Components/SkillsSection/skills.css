@@ -4,11 +4,13 @@
   align-items: center;
   /* justify-content: center; */
   padding: 20px;
+  height: 40vh;
+  min-height: 650px;
 }
 
 h2 {
   border: 2px solid;
-  margin-bottom: 15%;
+  margin-bottom: 7%;
 }
 .skills-frontend {
   border: 2px solid green;
@@ -16,6 +18,9 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  max-width: 450px;
 }
 
 .skills-frontend h4 {
