@@ -30,6 +30,9 @@
 }
 
 @media screen and (min-width: 767px) {
+  .hero-section {
+    max-height: 1250px;
+  }
   .personal-info {
     /* border: 2px solid red; */
     flex-direction: row-reverse;
