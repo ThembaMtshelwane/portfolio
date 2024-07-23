@@ -8,8 +8,10 @@
   /* border: 2px solid; */
   display: flex;
   flex-direction: column;
-
+  height: 60%;
   align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .profile-image-container {
