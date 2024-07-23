@@ -1,5 +1,11 @@
+.hero-section {
+  height: 100vh;
+  min-height: 650px;
+  max-height: 850px;
+}
+
 .personal-info {
-  border: 2px solid;
+  /* border: 2px solid; */
   display: flex;
   flex-direction: column;
 
@@ -15,7 +21,7 @@
 }
 
 .profile-details {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   padding: 10px 20px;

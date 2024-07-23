@@ -1,10 +1,10 @@
 import "./hero.css";
 import Navbar from "./Navbar";
-import TechParade from "./TechParade";
+import Carousel from "./Carousel";
 
 const HeroSection = () => {
   return (
-    <section className="section-container">
+    <section className="hero-section section-container">
       <Navbar />
       <section className="personal-info">
         <section className="profile-image-container">
@@ -15,7 +15,7 @@ const HeroSection = () => {
           <h3>Frontend Web Developer</h3>
         </section>
       </section>
-      <TechParade />
+      <Carousel />
     </section>
   );
 };
