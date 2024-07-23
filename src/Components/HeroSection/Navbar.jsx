@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import './navbar.css'
-import { MdMenu } from 'react-icons/md'
-import { IoClose } from 'react-icons/io5'
+import { useState } from "react";
+import "./navbar.css";
+import { MdMenu } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true)
-  const handleClick = () => setToggle(!toggle)
+  const [toggle, setToggle] = useState(true);
+  const handleClick = () => setToggle(!toggle);
 
   return (
     <nav>
@@ -36,9 +36,23 @@ const Navbar = () => {
             </li>
           </ul>
         )}
+        <ul className="desktop-nav-links">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#technologies">Skiils</a>
+          </li>
+          <li>
+            <a href="#project">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
