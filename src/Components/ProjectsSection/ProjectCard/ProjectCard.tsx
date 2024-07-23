@@ -1,16 +1,20 @@
 import React from "react";
-import ageCalImage from "../../../assets/project-images/age-calculator/age-calculator.jpg";
-const ProjectCard = () => {
+
+const ProjectCard = ({ imageURL, projectName, githublink, liveDemo }) => {
   return (
     <section className="project-card">
       <section className="project-image-container">
-        <img src={ageCalImage} alt="" />
+        <img src={imageURL} alt={projectName.name} />
       </section>
       <section className="project-information-container">
-        <h4> Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+        <h4>{projectName}</h4>
         <section className="project-links">
-          <a href="">Github</a>
-          <a href="">Live Demo</a>
+          <a href={githublink} target="_blank">
+            Github
+          </a>
+          <a href={liveDemo} target="_blank">
+            Live Demo
+          </a>
         </section>
       </section>
     </section>

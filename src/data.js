@@ -1,5 +1,5 @@
-const path = "./assets/project-images";
-const projectData = [
+const path = "./project-images";
+export const projectData = [
   {
     name: "Exam Prep - Lecturer Website",
     techStack: [
@@ -22,7 +22,7 @@ const projectData = [
     ],
     website: "https://exam-prep-roan.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/exam-prep",
-    image: `${path}/lecturer/lecturer-1.PNG`,
+    image: `${path}/lecturer/lecturer-1.jpg`,
   },
   {
     name: "Exam Prep - Student Website",
@@ -37,7 +37,7 @@ const projectData = [
     ],
     website: "https://exam-prep-students.vercel.app",
     githublink: "https://github.com/ThembaMtshelwane/exam-prep-students",
-    image: `${path}/student/student-1.PNG`,
+    image: `${path}/student/student-1.jpg`,
   },
   // {
   //   name: 'Wordle',
@@ -165,7 +165,7 @@ const projectData = [
     ],
     website: "https://age-calculator-app-main-blond.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/age-calculator-app-main",
-    image: `${path}/age-calculator/age-calculator.PNG`,
+    image: `${path}/age-calculator/age-calculator.jpg`,
   },
   {
     name: "Newsletter sign-up form with success message",
