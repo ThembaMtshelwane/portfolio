@@ -28,3 +28,28 @@
   flex-direction: column;
   padding: 10px 20px;
 }
+
+@media screen and (min-width: 767px) {
+  .personal-info {
+    /* border: 2px solid red; */
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
+    padding: 25px;
+    margin: auto;
+  }
+  .profile-image-container {
+    border: 2px solid blue;
+    min-height: 350px;
+    min-width: 350px;
+    border-radius: 50%;
+    margin-left: 3%;
+  }
+  .personal-info h1 {
+    font-size: 2.4rem;
+  }
+  .personal-info h3 {
+    font-size: 1.5rem;
+  }
+}

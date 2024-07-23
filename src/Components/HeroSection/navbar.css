@@ -39,9 +39,6 @@ nav {
 }
 
 @media screen and (min-width: 510px) {
-  nav {
-    /* background-color: rgba(255, 255, 0, 0.321); */
-  }
   .menu-icon {
     display: none;
   }
