@@ -1,33 +1,62 @@
 .skills-section {
+  /* border: 2px solid green; */
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  padding: 20px;
-  height: 40vh;
-  min-height: 650px;
+  justify-content: center;
 }
 
 h2 {
   border: 2px solid;
-  margin-bottom: 7%;
+  margin-bottom: 50px;
 }
-.skills-frontend {
-  border: 2px solid green;
-  padding: 10px;
-  width: 100%;
+
+.experience-container {
+  /* border: 2px solid; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  max-width: 450px;
+  width: 100%;
+}
+
+.work-experience-container {
+  /* border: 2px solid red; */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-experiece {
+  border: 1px solid var(--secondary-colour);
+  border-radius: 20px;
+  background-color: var(--primary-colour);
+
+  padding: 15px;
+  margin-bottom: 15px;
+
+  height: 160px;
+  width: 100%;
+  max-width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    box-shadow: 0px 0px 7px 1px var(--secondary-colour);
+  }
+}
+
+.skills-frontend {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-frontend h4 {
-  border: 2px solid;
-  font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 25px;
 }
 
 .skills-frontend ul {
@@ -35,9 +64,39 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 300px;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid var(--secondary-colour);
+  border-radius: 20px;
+  background-color: var(--primary-colour);
+  &:hover {
+    box-shadow: 0px 0px 7px 1px var(--secondary-colour);
+  }
 }
 
 .skills-frontend ul li {
   padding: 10px;
   margin: 5px;
+}
+
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+
+  /* border: 2px solid; */
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.cv-container button {
+  color: var(--text-colour);
+  padding: 15px;
+  border: 1px solid var(--secondary-colour);
+  border-radius: 20px;
+  background-color: var(--primary-colour);
+  &:hover {
+    box-shadow: 0px 0px 7px 1px var(--secondary-colour);
+  }
 }

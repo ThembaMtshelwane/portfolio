@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 :root {
@@ -52,7 +52,7 @@ ul {
 }
 
 .section-container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 @media screen and (min-width: 767px) {
