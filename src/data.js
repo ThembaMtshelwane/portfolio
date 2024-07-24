@@ -152,39 +152,39 @@ export const projectData = [
     githublink: "https://github.com/ThembaMtshelwane/faq-accordion-main",
     image: `${path}/faq-accordian/faq-a.PNG`,
   },
-  {
-    name: "Age Calculator App",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    summary:
-      "This is a Frontend Mentor challenge where I had to build an Age Calculator App and get it looking as close to the provided design as close as possible.",
-    responsibilities: [
-      "View an age in years, months, and days after submitting a valid date through the form",
-      "Implement validation errors",
-      "See hover and focus states for all interactive elements on the page",
-      "View the optimal layout for the interface depending on their device's screen size",
-    ],
-    website: "https://age-calculator-app-main-blond.vercel.app/",
-    githublink: "https://github.com/ThembaMtshelwane/age-calculator-app-main",
-    image: `${path}/age-calculator/age-calculator.jpg`,
-  },
-  {
-    name: "Newsletter sign-up form with success message",
-    techStack: ["HTML", "CSS"],
-    summary:
-      "This is a Frontend Mentor challenge where I had to build a News Letter Card and get it looking as close to the provided design as close as possible.",
-    responsibilities: [
-      "Add their email and submit the form",
-      "See a success message with their email after successfully submitting the form",
-      "See form validation messages ",
-      "View the optimal layout for the interface depending on their device's screen size",
-      "See hover and focus states for all interactive elements on the page",
-    ],
-    website:
-      "https://newsletter-sign-up-with-success-message-main-lilac.vercel.app/",
-    githublink:
-      "https://github.com/ThembaMtshelwane/newsletter-sign-up-with-success-message-main",
-    image: `${path}/news-letter/news-letter.PNG`,
-  },
+  // {
+  //   name: "Age Calculator App",
+  //   techStack: ["HTML", "CSS", "JavaScript"],
+  //   summary:
+  //     "This is a Frontend Mentor challenge where I had to build an Age Calculator App and get it looking as close to the provided design as close as possible.",
+  //   responsibilities: [
+  //     "View an age in years, months, and days after submitting a valid date through the form",
+  //     "Implement validation errors",
+  //     "See hover and focus states for all interactive elements on the page",
+  //     "View the optimal layout for the interface depending on their device's screen size",
+  //   ],
+  //   website: "https://age-calculator-app-main-blond.vercel.app/",
+  //   githublink: "https://github.com/ThembaMtshelwane/age-calculator-app-main",
+  //   image: `${path}/age-calculator/age-calculator.jpg`,
+  // },
+  // {
+  //   name: "Newsletter sign-up form with success message",
+  //   techStack: ["HTML", "CSS"],
+  //   summary:
+  //     "This is a Frontend Mentor challenge where I had to build a News Letter Card and get it looking as close to the provided design as close as possible.",
+  //   responsibilities: [
+  //     "Add their email and submit the form",
+  //     "See a success message with their email after successfully submitting the form",
+  //     "See form validation messages ",
+  //     "View the optimal layout for the interface depending on their device's screen size",
+  //     "See hover and focus states for all interactive elements on the page",
+  //   ],
+  //   website:
+  //     "https://newsletter-sign-up-with-success-message-main-lilac.vercel.app/",
+  //   githublink:
+  //     "https://github.com/ThembaMtshelwane/newsletter-sign-up-with-success-message-main",
+  //   image: `${path}/news-letter/news-letter.PNG`,
+  // },
 ];
 
 export const skillsData = {
