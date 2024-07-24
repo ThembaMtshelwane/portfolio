@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import AboutSection from "./Components/AboutSection/AboutSection.tsx";
-import SkillsSection from "./Components/SkillsSection/SkillsSection.tsx";
 import ProjectsSection from "./Components/ProjectsSection/ProjectsSection.tsx";
 import ContactsSection from "./Components/ContactsSection/ContactsSection.jsx";
 import "./App.css";
@@ -12,7 +11,6 @@ const App = () => {
       <section className="background-colour"></section>
       <HeroSection />
       <AboutSection />
-      <SkillsSection />
       <ProjectsSection />
       <ContactsSection />
     </section>
