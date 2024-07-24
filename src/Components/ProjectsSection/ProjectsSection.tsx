@@ -15,8 +15,6 @@ const ProjectsSection = () => {
         />
       </li>
     );
-
-    console.log(project.image);
   });
 
   console.log(projectListItems);

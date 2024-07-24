@@ -1,9 +1,11 @@
 .contact-section {
   padding: 20px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 form {
@@ -22,6 +24,7 @@ input {
   color: var(--primary-colour);
   padding: 10px;
   border-radius: 10px;
+  border: none;
 }
 
 label {

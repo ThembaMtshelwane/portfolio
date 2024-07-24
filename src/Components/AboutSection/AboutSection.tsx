@@ -6,7 +6,7 @@ const AboutSection = () => {
     <section className=" about-section section-container">
       <section className="about-image-container"></section>
       <section className="about-text-container">
-        <h3>About</h3>
+        <h2>About</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque illo
           vero amet quae tempore natus cum dicta exercitationem soluta
