@@ -23,13 +23,19 @@ const Navbar = () => {
               <IoClose />
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" onClick={handleClick}>
+                About
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={handleClick}>
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={handleClick}>
+                Contact
+              </a>
             </li>
           </ul>
         )}
