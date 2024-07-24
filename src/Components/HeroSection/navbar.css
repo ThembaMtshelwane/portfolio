@@ -1,12 +1,22 @@
 nav {
   padding: 10px 20px;
+  /* position: fixed; */
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
   /* border: 2px solid yellow; */
+  top: 0;
+  left: 0;
+  background-color: var(--primary-colour);
+  z-index: 1000;
 }
 
 .mobile-navbar {
   display: flex;
   justify-content: space-between;
   position: relative;
+  /* border: 2px solid; */
+  width: 100%;
 }
 
 .mobile-navbar li {
@@ -17,6 +27,7 @@ nav {
 .close-icon,
 .menu-icon {
   padding: 20px;
+  margin-left: auto;
 }
 
 .mobile-navbar li:hover {
@@ -42,6 +53,7 @@ nav {
 @media screen and (min-width: 510px) {
   .menu-icon {
     display: none;
+    margin-right: auto;
   }
   .desktop-nav-links {
     display: flex;

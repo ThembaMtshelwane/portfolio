@@ -20,7 +20,7 @@ const ProjectsSection = () => {
   console.log(projectListItems);
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <h2>Protects</h2>
       <ul className="projects-container">{projectListItems}</ul>
     </section>

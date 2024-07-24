@@ -4,10 +4,10 @@ import Carousel from "./Carousel";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section section-container">
+    <section className="hero-section">
       <Navbar />
       <section className="personal-info">
-        <section className="profile-image-container">
+        <section className="profile-image-container" id="hero">
           <img className="profile-image" src="" alt="" />
         </section>
         <section className="profile-details">
