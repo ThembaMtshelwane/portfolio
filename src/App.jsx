@@ -3,6 +3,8 @@ import HeroSection from "./Components/HeroSection/HeroSection";
 import AboutSection from "./Components/AboutSection/AboutSection.tsx";
 import ProjectsSection from "./Components/ProjectsSection/ProjectsSection.tsx";
 import ContactsSection from "./Components/ContactsSection/ContactsSection.jsx";
+import FooterSection from "./Components/FooterSection/FooterSection.jsx";
+
 import "./App.css";
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
       <AboutSection />
       <ProjectsSection />
       <ContactsSection />
+      <FooterSection />
     </section>
   );
 };

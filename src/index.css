@@ -9,6 +9,7 @@
 
 :root {
   --primary-colour: #020413;
+  /* --primary-colour: #04072b; */
   --secondary-colour: #a0c9f8;
   --text-colour: #dde9f1;
 }
@@ -24,7 +25,7 @@ body {
   background-position: center;
   /* background-repeat: repeat-y; */
   background-size: cover;
-  /* height: 100vh; */
+  height: 100vh;
 
   color: var(--text-colour);
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -52,9 +53,10 @@ ul {
   list-style: none;
 }
 
-/* .section-container {
-  border: 2px solid red;
-} */
+a:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 7px 1px var(--secondary-colour);
+}
 
 @media screen and (min-width: 767px) {
   h1 {
