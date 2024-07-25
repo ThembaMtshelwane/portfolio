@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import { FaGithub } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
@@ -8,12 +9,17 @@ const AboutSection = () => {
       <section className="about-text-container">
         <h2>About</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque illo
-          vero amet quae tempore natus cum dicta exercitationem soluta
-          laboriosam! Similique sed unde magni accusantium soluta quis ex iure,
-          sapiente sequi fuga pariatur ducimus, beatae illo. Sit ratione
-          maiores, quaerat obcaecati, odit accusantium distinctio illum aut
-          facilis quas, perspiciatis ab.
+          Recent Information Engineering graduand from Wits University.
+          Experienced in front-end and full-stack development, UI/UX design, and
+          database management. Demonstrated proficiency in React, NextJS, Chakra
+          UI, and Firebase through independent projects on
+          <a
+            className="about-link"
+            href="https://github.com/ThembaMtshelwane"
+            target="_blank"
+          >
+            GitHub
+          </a>
         </p>
       </section>
     </section>

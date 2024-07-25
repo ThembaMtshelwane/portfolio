@@ -23,6 +23,17 @@
 
 .about-text-container p {
   text-align: justify;
+  line-height: 2rem;
+  word-spacing: 0.2rem;
+}
+
+.about-link {
+  display: inline;
+  border: none;
+  box-shadow: none;
+  padding: 2px 5px;
+  text-decoration: underline;
+  margin-left: 2px;
 }
 
 @media screen and (min-width: 767px) {

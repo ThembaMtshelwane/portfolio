@@ -3,7 +3,7 @@ import "./carousel.css";
 
 const Carousel = () => {
   return (
-    <a className="carousel-container">
+    <section className="carousel-container">
       <ul className="carousel-track">
         <li className="carousel-card">HTML</li>
         <li className="carousel-card">CSS</li>
@@ -15,7 +15,7 @@ const Carousel = () => {
         <li className="carousel-card">Firebase</li>
         <li className="carousel-card">ChakraUI</li>
       </ul>
-    </a>
+    </section>
   );
 };
 export default Carousel;
