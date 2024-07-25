@@ -1,0 +1,18 @@
+.main-container {
+  position: relative;
+}
+
+.background-colour {
+  background-color: var(--primary-colour);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.95;
+}
+
+@media screen and (min-width: 480px) {
+  .background-colour {
+    opacity: 0.8;
+  }
+}
