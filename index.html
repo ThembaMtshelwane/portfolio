@@ -4,163 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Themba Mtshelwane</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="/navbar.css" />
-    <link rel="stylesheet" href="./intro.css" />
-    <link rel="stylesheet" href="./about.css" />
-    <link rel="stylesheet" href="./tech.css" />
-    <link rel="stylesheet" href="./projects.css" />
-    <link rel="stylesheet" href="./footer.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="images/assets/logo.PNG" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./src/assets/general-images/logo.PNG"
+      type="image/x-icon"
+    />
 
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
     <script type="text/javascript">
-      ;(function () {
+      (function () {
         // https://dashboard.emailjs.com/admin/account
         emailjs.init({
-          publicKey: '76IDYM5uxNnPynikr',
-        })
-      })()
+          publicKey: "76IDYM5uxNnPynikr",
+        });
+      })();
     </script>
-    <script src="./data.js" defer></script>
-    <script src="./index.js" defer></script>
   </head>
   <body>
-    <nav>
-      <ul class="sidebar">
-        <li id="close-icon">
-          <a href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e8eaed"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </a>
-        </li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#tech-section">Tech</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-        <li><a href="#contact-section">Contact Me</a></li>
-      </ul>
-      <ul>
-        <li><a href="#intro-section">Logo</a></li>
-        <li class="hideOnMobile"><a href="#about-section">About</a></li>
-        <li class="hideOnMobile"><a href="#tech-section">Tech</a></li>
-        <li class="hideOnMobile"><a href="#projects-section">Projects</a></li>
-        <li class="hideOnMobile"><a href="#contact-section">Contact Me</a></li>
-        <li id="menu-icon">
-          <a href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="26px"
-              viewBox="0 -960 960 960"
-              width="25px"
-              fill="#e8eaed"
-            >
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-              />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <section class="intro-section" id="intro-section">
-        <section class="profile-image-container">
-          <img
-            class="profile-image"
-            src="/images/assets/profile-pic.jpg"
-            alt=""
-          />
-        </section>
-        <section class="my-info">
-          <h1 id="name">Themba Mtshelwane</h1>
-          <h2 id="position">Frontend Web Developer</h2>
-          <ul class="contact-list">
-            <li><a href="https://github.com/ThembaMtshelwane">GitHub</a></li>
-            <li>
-              <a href="https://www.linkedin.com/in/themba-mtshelwane/"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </section>
-      </section>
-
-      <section class="about-section" id="about-section">
-        <h2 class="sub-heading">About</h2>
-        <p class="profile-summary" id="profile-summary">
-          Recent Information Engineering graduand from Wits University.
-          Experienced in front-end and full-stack development, UI/UX design, and
-          database management. Demonstrated proficiency in React, NextJS, Chakra
-          UI, and Firebase through independent projects on GitHub.
-        </p>
-      </section>
-
-      <section class="tech-section" id="tech-section">
-        <h2 class="sub-heading">Technologies</h2>
-        <ul class="tech-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>Node JS</li>
-          <li>Express</li>
-          <li>React JS</li>
-          <li>Next JS</li>
-          <li>Firebase</li>
-          <li>Chakra UI</li>
-        </ul>
-      </section>
-
-      <section class="projects-section" id="projects-section">
-        <h2 class="sub-heading">Projects</h2>
-      </section>
-
-      <footer id="contact-section">
-        <h2 class="sub-heading" id="contact-me">Contact Me</h2>
-        <form action="">
-          <section class="userNames">
-            <section class="firstName">
-              <label for="firstName">First Name</label>
-              <input id="firstName" name="firstName" type="text" required />
-            </section>
-
-            <section class="lastName">
-              <label for="lastName">Last Name</label>
-              <input id="lastName" name="lastName" type="text" required />
-            </section>
-          </section>
-
-          <label for="emailAddress">Email Address</label>
-          <input id="emailAddress" name="emailAddress" type="email" required />
-
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
-
-          <button class="submit-button">SUBMIT</button>
-        </form>
-        <section id="messageContainer"></section>
-        <section class="contactInfo">
-          <h3>Email : Thembamm3@gmail.com</h3>
-          <h3>Phone : +27 84 480 4140</h3>
-        </section>
-      </footer>
-    </main>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
