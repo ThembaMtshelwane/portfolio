@@ -11,7 +11,9 @@ const Navbar = () => {
     <nav>
       <ul className="mobile-navbar">
         <li>
-          <a href="#hero">Logo</a>
+          <a href="#hero" className="logo">
+            <img src="general-images/profile-pic.jpg" alt="" />
+          </a>
         </li>
         {toggle ? (
           <li onClick={handleClick} className="menu-icon">

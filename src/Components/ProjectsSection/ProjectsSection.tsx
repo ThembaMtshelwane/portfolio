@@ -17,8 +17,6 @@ const ProjectsSection = () => {
     );
   });
 
-  console.log(projectListItems);
-
   return (
     <section className="projects-section" id="projects">
       <h2>Protects</h2>

@@ -3,6 +3,7 @@ nav {
   /* position: fixed; */
   display: flex;
   width: 100%;
+  max-height: 100px;
   /* justify-content: space-between; */
   /* border: 2px solid yellow; */
   top: 0;
@@ -22,6 +23,21 @@ nav {
 .mobile-navbar li {
   margin: 5px;
   cursor: pointer;
+  align-self: center;
+}
+
+.logo {
+  max-width: 70px;
+  height: 70px;
+  /* border: 2px solid green; */
+  padding: 0;
+  border-radius: 50%;
+}
+.logo img {
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .close-icon,
@@ -31,8 +47,14 @@ nav {
 }
 
 .mobile-navbar li:hover {
-  transform: scale(1.01);
+  transform: scale(1.1);
+  /* box-shadow: 0px 0px 12px 2px var(--secondary-colour); */
+}
+
+.mobile-navbar .logo img:hover {
+  transform: scale(1.1);
   box-shadow: 0px 0px 12px 2px var(--secondary-colour);
+  border-radius: 50%;
 }
 
 .nav-links {

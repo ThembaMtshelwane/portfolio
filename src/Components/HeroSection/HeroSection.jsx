@@ -8,7 +8,11 @@ const HeroSection = () => {
       <Navbar />
       <section className="personal-info">
         <section className="profile-image-container" id="hero">
-          <img className="profile-image" src="" alt="" />
+          <img
+            className="profile-image"
+            src="general-images/profile-pic.jpg"
+            alt=""
+          />
         </section>
         <section className="profile-details">
           <h1>Themba Mtshelwane</h1>

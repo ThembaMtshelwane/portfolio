@@ -8,7 +8,7 @@
 }
 
 :root {
-  --primary-colour: #010211;
+  --primary-colour: #020413;
   --secondary-colour: #a0c9f8;
   --text-colour: #dde9f1;
 }
@@ -22,9 +22,9 @@ body {
   position: relative;
   background-image: url("./assets/general-images/background-image.webp");
   background-position: center;
-  background-repeat: repeat-y;
+  /* background-repeat: repeat-y; */
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
 
   color: var(--text-colour);
   font-family: "Inter", Arial, Helvetica, sans-serif;
