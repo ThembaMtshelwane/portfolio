@@ -1,6 +1,9 @@
 .about-section {
   display: flex;
   height: 100vh;
+  min-height: 650px;
+  max-height: 850px;
+  /* border: 2px solid red; */
 }
 
 .about-text-container {

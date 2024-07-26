@@ -7,6 +7,9 @@
   justify-content: center;
   height: 100vh;
   margin-top: 150px;
+  min-height: 850px;
+  max-height: 950px;
+  /* border: 2px solid red; */
 }
 
 form {
