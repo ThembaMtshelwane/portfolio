@@ -1,21 +1,62 @@
 import React from "react";
 import "./carousel.css";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiChakraui } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+
 const Carousel = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 12000, // Set a high speed for continuous scrolling
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear", // Linear easing for continuous flow
+    // variableWidth: true,
+    swipeToSlide: true,
+    arrows: false,
+    pauseOnHover: false,
+  };
+
   return (
-    <section className="carousel-container">
-      <ul className="carousel-track">
-        <li className="carousel-card">HTML</li>
-        <li className="carousel-card">CSS</li>
-        <li className="carousel-card">JavaScript</li>
-        <li className="carousel-card">TypeScript</li>
-        <li className="carousel-card">React</li>
-        <li className="carousel-card">NodeJS</li>
-        <li className="carousel-card">Express</li>
-        <li className="carousel-card">Firebase</li>
-        <li className="carousel-card">ChakraUI</li>
-      </ul>
-    </section>
+    <Slider {...settings}>
+      <div>
+        <FaHtml5 />
+      </div>
+      <div>
+        <IoLogoCss3 />
+      </div>
+      <div>
+        <IoLogoJavascript />
+      </div>
+      <div>
+        <SiTypescript />
+      </div>
+      <div>
+        <FaReact />
+      </div>
+      <div>
+        <RiNextjsFill />
+      </div>
+      <div>
+        <IoLogoFirebase />
+      </div>
+      <div>
+        <SiChakraui />
+      </div>
+    </Slider>
   );
 };
 export default Carousel;
