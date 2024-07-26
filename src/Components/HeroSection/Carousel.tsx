@@ -26,6 +26,7 @@ const Carousel = () => {
     cssEase: "linear",
 
     swipeToSlide: true,
+    arrows: false,
     pauseOnHover: false,
   };
 
