@@ -18,15 +18,14 @@ const Carousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 12000, // Set a high speed for continuous scrolling
+    speed: 10000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
-    cssEase: "linear", // Linear easing for continuous flow
-    // variableWidth: true,
+    cssEase: "linear",
+
     swipeToSlide: true,
-    arrows: false,
     pauseOnHover: false,
   };
 
