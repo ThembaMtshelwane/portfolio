@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./carousel.css";
 
 import Slider from "react-slick";
@@ -15,48 +15,84 @@ import { SiChakraui } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 
 const Carousel = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 10000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-
-    swipeToSlide: true,
-    arrows: false,
-    pauseOnHover: false,
-  };
-
   return (
-    <Slider {...settings}>
-      <div>
-        <FaHtml5 />
+    // <div className="logos">
+    //   <div className="logos-slide">
+    //     <img src="./logos/3m.svg" />
+    //     <img src="./logos/barstool-store.svg" />
+    //     <img src="./logos/budweiser.svg" />
+    //     <img src="./logos/buzzfeed.svg" />
+    //     <img src="./logos/forbes.svg" />
+    //     <img src="./logos/macys.svg" />
+    //     <img src="./logos/menshealth.svg" />
+    //     <img src="./logos/mrbeast.svg" />
+    //   </div>
+
+    //   <div className="logos-slide">
+    //     <img src="./logos/3m.svg" />
+    //     <img src="./logos/barstool-store.svg" />
+    //     <img src="./logos/budweiser.svg" />
+    //     <img src="./logos/buzzfeed.svg" />
+    //     <img src="./logos/forbes.svg" />
+    //     <img src="./logos/macys.svg" />
+    //     <img src="./logos/menshealth.svg" />
+    //     <img src="./logos/mrbeast.svg" />
+    //   </div>
+    // </div>
+    <div className="logos">
+      <div className="logos-slide">
+        <div>
+          <FaHtml5 />
+        </div>
+        <div>
+          <IoLogoCss3 />
+        </div>
+        <div>
+          <IoLogoJavascript />
+        </div>
+        <div>
+          <SiTypescript />
+        </div>
+        <div>
+          <FaReact />
+        </div>
+        <div>
+          <RiNextjsFill />
+        </div>
+        <div>
+          <IoLogoFirebase />
+        </div>
+        <div>
+          <SiChakraui />
+        </div>
       </div>
-      <div>
-        <IoLogoCss3 />
+      <div className="logos-slide">
+        <div>
+          <FaHtml5 />
+        </div>
+        <div>
+          <IoLogoCss3 />
+        </div>
+        <div>
+          <IoLogoJavascript />
+        </div>
+        <div>
+          <SiTypescript />
+        </div>
+        <div>
+          <FaReact />
+        </div>
+        <div>
+          <RiNextjsFill />
+        </div>
+        <div>
+          <IoLogoFirebase />
+        </div>
+        <div>
+          <SiChakraui />
+        </div>
       </div>
-      <div>
-        <IoLogoJavascript />
-      </div>
-      <div>
-        <SiTypescript />
-      </div>
-      <div>
-        <FaReact />
-      </div>
-      <div>
-        <RiNextjsFill />
-      </div>
-      <div>
-        <IoLogoFirebase />
-      </div>
-      <div>
-        <SiChakraui />
-      </div>
-    </Slider>
+    </div>
   );
 };
 export default Carousel;
