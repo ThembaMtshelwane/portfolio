@@ -1,6 +1,20 @@
 const path = './project-images'
 export const projectData = [
   {
+    name: 'Summer Mixology',
+    techStack: ['JavaScript', 'React JS', 'Tailwind CSS', 'RESTful API'],
+    summary:
+      'Summer Mixology is website that provides cocktail recipes. The website was inspired by the Kaskad Mixer website',
+    responsibilities: [
+      'Fetching data from an API, https://www.thecocktaildb.com/ ',
+      'Working in a team',
+      'Using the react-scroll-parallax library',
+    ],
+    website: 'https://summer-mixology.vercel.app/',
+    githublink: 'https://github.com/ThembaMtshelwane/summer-mixology',
+    image: `${path}/summer-mixology/summer-mixology-1.PNG`,
+  },
+  {
     name: 'Enter-Stream',
     techStack: ['TypeScript', 'React JS', 'Tailwind CSS', 'JSON Server'],
     summary:
@@ -29,7 +43,7 @@ export const projectData = [
       'Latest Books Page: Showcases additional recent book releases for those looking for the most current additions to the book market.',
       'Search and Filter: Enables users to search for books by name and filter results by genre using the Google Books API.',
     ],
-    website: 'https://book-scape-nine.vercel.app/dashboard',
+    website: 'https://book-scape-nine.vercel.app/',
     githublink: 'https://github.com/ThembaMtshelwane/book-scape',
     image: `${path}/book-scape/book1.PNG`,
   },
