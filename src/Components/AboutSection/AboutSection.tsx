@@ -9,10 +9,11 @@ const AboutSection = () => {
       <section className="about-text-container">
         <h2>About</h2>
         <p>
-          Recent Information Engineering graduand from Wits University.
-          Experienced in front-end and full-stack development, UI/UX design, and
-          database management. Demonstrated proficiency in React, NextJS, Chakra
-          UI, and Firebase through independent projects on
+          Driven and skilled Software Developer with a BSc (Hons) in Information
+          Engineering. Currently advancing my expertise as a Software Developer
+          Intern at Tshimologong, where I specialize in creating responsive,
+          user-focused websites. Committed to solving complex problems and
+          enhancing user experiences through innovative, efficient code.
           <a
             className="about-link"
             href="https://github.com/ThembaMtshelwane"
@@ -23,7 +24,7 @@ const AboutSection = () => {
         </p>
       </section>
     </section>
-  );
+  )
 };
 
 export default AboutSection;

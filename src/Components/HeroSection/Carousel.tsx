@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
-import "./carousel.css";
+import React from 'react'
+import './carousel.css'
 
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-import { IoLogoFirebase } from "react-icons/io5";
-import { SiChakraui } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
+import { RiTailwindCssFill } from 'react-icons/ri'
+import { FaHtml5 } from 'react-icons/fa'
+import { IoLogoCss3 } from 'react-icons/io5'
+import { IoLogoJavascript } from 'react-icons/io5'
+import { FaReact } from 'react-icons/fa'
+import { RiNextjsFill } from 'react-icons/ri'
+import { IoLogoFirebase } from 'react-icons/io5'
+import { SiChakraui } from 'react-icons/si'
+import { SiTypescript } from 'react-icons/si'
 
 const Carousel = () => {
   return (
@@ -38,6 +39,9 @@ const Carousel = () => {
         <div>
           <SiChakraui />
         </div>
+        <div>
+          <RiTailwindCssFill />
+        </div>
       </div>
       <div className="logos-slide">
         <div>
@@ -64,8 +68,11 @@ const Carousel = () => {
         <div>
           <SiChakraui />
         </div>
+        <div>
+          <RiTailwindCssFill />
+        </div>
       </div>
     </div>
-  );
-};
-export default Carousel;
+  )
+}
+export default Carousel
