@@ -29,7 +29,7 @@ export const projectData = [
       "CSS Grid: Implemented CSS Grid for a flexible and responsive layout",
       "Figma Design: The website was implemented based on a Figma design, reflecting accurate conversion from design to code.",
     ],
-    website: "",
+    website: "https://enter-stream.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/enter-stream",
     image: `${path}/enter-stream/media1.PNG`,
   },
