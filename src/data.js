@@ -1,6 +1,16 @@
 const path = "./project-images";
 export const projectData = [
   {
+    name: "Immergence Studios",
+    techStack: ["Typescript", "React JS", "Tailwind CSS"],
+    summary:
+      "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content.",
+    responsibilities: ["I designed the UI/UX.", "", ""],
+    website: "https://immergence-studios.vercel.app/",
+    githublink: "https://github.com/ThembaMtshelwane/immergence-studios",
+    image: `${path}/immergence-studios/immergence-studios.PNG`,
+  },
+  {
     name: "Summer Mixology",
     techStack: ["JavaScript", "React JS", "Tailwind CSS", "RESTful API"],
     summary:
