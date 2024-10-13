@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "custom-background": "url('general-images/background-image.webp')",
+      },
       colors: {
         "primary-colour": "#020413",
         "secondary-colour": "#a0c9f8",
