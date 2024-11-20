@@ -7,12 +7,7 @@ const ProjectsSection = () => {
   const projectListItems = projectData.map((project, index) => {
     return (
       <li key={project.name}>
-        <ProjectCard
-          imageURL={project.image}
-          projectName={project.name}
-          githublink={project.githublink}
-          liveDemo={project.website}
-        />
+        <ProjectCard project={project} />
       </li>
     );
   });

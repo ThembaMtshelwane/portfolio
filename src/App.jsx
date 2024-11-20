@@ -6,6 +6,7 @@ import ContactsSection from "./Components/ContactsSection/ContactsSection.jsx";
 import FooterSection from "./Components/FooterSection/FooterSection.jsx";
 
 import "./App.css";
+import Modal from "./Components/Modal.tsx";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <ProjectsSection />
       <ContactsSection />
       <FooterSection />
+      <Modal />
     </section>
   );
 };

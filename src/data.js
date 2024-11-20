@@ -18,7 +18,7 @@ export const projectData = [
     name: "Enter-Stream",
     techStack: ["TypeScript", "React JS", "Tailwind CSS", "JSON Server"],
     summary:
-      "Enter-Stream is a demo streaming platform website that allows users to view a list of movies and series, as well as add, delete, and edit information about them. This website was built with React.js, Tailwind CSS and implemented based on a Figma design, showcasing practical application of design-to-code workflows.",
+      "Enter-Stream is a demo streaming platform website that allows users to view a list of movies and series, as well as add, delete, and edit information about them. It uses a the JSON server thus not fully deployed. More information in the repo.",
     responsibilities: [
       "CRUD Functionality",
       "Create: Add new movies or series.",
