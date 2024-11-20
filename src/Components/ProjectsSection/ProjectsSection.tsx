@@ -14,7 +14,7 @@ const ProjectsSection = () => {
 
   return (
     <section className="projects-section" id="projects">
-      <h2>Protects</h2>
+      <h2>Projects.</h2>
       <ul className="projects-container">{projectListItems}</ul>
     </section>
   );
