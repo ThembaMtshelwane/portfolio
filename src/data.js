@@ -5,7 +5,7 @@ export const projectData = [
     techStack: ["Typescript", "React JS", "Tailwind CSS"],
     summary:
       "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content.",
-    responsibilities: ["I designed the UI/UX.", "", ""],
+    responsibilities: ["I designed the UI/UX.", "I implemented responsiveness", "I added audio to boost the ambiance of the UI/UX and theme"],
     website: "https://immergence-studios.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/immergence-studios",
     image: `${path}/immergence-studios/immergence-studios.PNG`,
@@ -14,7 +14,7 @@ export const projectData = [
     name: "Summer Mixology",
     techStack: ["JavaScript", "React JS", "Tailwind CSS", "RESTful API"],
     summary:
-      "Summer Mixology is website that provides cocktail recipes. The website was inspired by the Kaskad Mixer website",
+      "Summer Mixology is a website that provides cocktail recipes. The website was inspired by the Kaskad Mixer website",
     responsibilities: [
       "Fetching data from an API, https://www.thecocktaildb.com/ ",
       "Working in a team",
