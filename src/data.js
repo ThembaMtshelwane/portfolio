@@ -181,19 +181,19 @@ export const projectData = [
     image: `${path}/contact-form/contact-form.jpg`,
   },
 
-  {
-    name: "Blog Post Card",
-    techStack: ["HTML", "CSS"],
-    summary:
-      "This is a Frontend Mentor challenge where I had to build a Blog Post Card and get it looking as close to the provided design as close as possible.",
-    responsibilities: [
-      "I implemented responsive web design",
-      "I implemented hover and focus states for all interactive elements on the page",
-    ],
-    website: "https://blog-preview-card-main-neon.vercel.app/",
-    githublink: "https://github.com/ThembaMtshelwane/blog-preview-card-main",
-    image: `${path}/blog-post/blog-post.PNG`,
-  },
+  // {
+  //   name: "Blog Post Card",
+  //   techStack: ["HTML", "CSS"],
+  //   summary:
+  //     "This is a Frontend Mentor challenge where I had to build a Blog Post Card and get it looking as close to the provided design as close as possible.",
+  //   responsibilities: [
+  //     "I implemented responsive web design",
+  //     "I implemented hover and focus states for all interactive elements on the page",
+  //   ],
+  //   website: "https://blog-preview-card-main-neon.vercel.app/",
+  //   githublink: "https://github.com/ThembaMtshelwane/blog-preview-card-main",
+  //   image: `${path}/blog-post/blog-post.PNG`,
+  // },
   // {
   //   name: 'Results Summary Component',
   //   techStack: ['HTML', 'CSS'],
