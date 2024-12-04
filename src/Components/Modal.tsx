@@ -39,13 +39,14 @@ const Modal: React.FC<ModalProps> = ({ open, setOpen, project }) => {
                 <p>{project.summary}</p>
 
                 <h4>Tech Stack</h4>
-                {project.techStack.map((tech) => (
-                  <span>{tech}</span>
+
+                {project.techStack.map((tech, index) => (
+                  <span key={index}>{tech} </span>
                 ))}
 
                 <h4>Tasks</h4>
-                {project.responsibilities.map((responsibility) => (
-                  <li>
+                {project.responsibilities.map((responsibility, index) => (
+                  <li key={index}>
                     {" "}
                     {" - "} {responsibility}
                   </li>
