@@ -7,6 +7,7 @@ const AboutSection = () => {
     <section className=" about-section section-container" id="about">
       <section className="about-image-container"></section>
       <section className="about-text-container">
+        {/* <div className="about-border"></div> */}
         <h2>About</h2>
         <p>
           Driven and skilled Software Developer with a BSc (Hons) in Information
@@ -24,7 +25,7 @@ const AboutSection = () => {
         </p>
       </section>
     </section>
-  )
+  );
 };
 
 export default AboutSection;

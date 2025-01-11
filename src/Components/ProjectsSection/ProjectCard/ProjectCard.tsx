@@ -11,6 +11,9 @@ const ProjectCard = ({ project }) => {
         className="project-card"
         onClick={() => setIsOpen((prev) => !prev)}
       >
+        <div className="wavy-border-1"></div>
+        <div className="wavy-border-2"></div>
+        <div className="wavy-border-3"></div>
         <section className="project-image-container">
           <img src={image} alt={name} />
         </section>

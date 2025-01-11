@@ -17,7 +17,8 @@
 }
 
 .project-card {
-  border: 1px solid var(--secondary-colour);
+  position: relative;
+  /* border: 1px solid var(--secondary-colour); */
   border-radius: 25px;
   height: 450px;
   margin: 30px 0px;
@@ -39,7 +40,7 @@
 .project-card:hover {
   cursor: pointer;
   transform: scale(1.01);
-  box-shadow: 0px 0px 7px 1px var(--secondary-colour);
+  /* box-shadow: 0px 0px 7px 1px var(--secondary-colour); */
 }
 
 .project-card h2 {
@@ -63,6 +64,63 @@
   border: 2px solid;
   border-radius: 25px;
   margin-right: 15px;
+}
+
+.wavy-border-1,.wavy-border-2,.wavy-border-3 {
+  position: absolute;
+  width: 100%;
+  height: 105%;
+  left: 0;
+  top: 0;
+  border: 2px solid;
+  animation: rotate-wave 8s linear infinite;
+  border-radius: 37%;
+  scale:.97;
+  border: 1px solid var(--secondary-colour);
+  box-shadow: 0px 0px 7px 1px var(--secondary-colour);
+  z-index:-999;
+}
+
+.wavy-border-2 {
+  animation: rotate-wave-2 10s linear infinite;
+  border-radius: 45%;
+  scale:0.95;
+}
+
+.wavy-border-3 {
+  animation: rotate-wave 4s linear infinite;
+  border-radius: 40%;
+  scale:0.92;
+}
+
+@keyframes rotate-wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-wave-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (min-width: 767px) {
