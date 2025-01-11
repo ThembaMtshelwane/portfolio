@@ -13,6 +13,7 @@ export const projectData = [
     website: "https://immergence-studios.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/immergence-studios",
     image: `${path}/immergence-studios/immergence-studios.PNG`,
+    status: "Complete",
   },
   // {
   //   name: "Summer Mixology",
@@ -46,6 +47,7 @@ export const projectData = [
     website: "https://enter-stream.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/enter-stream",
     image: `${path}/enter-stream/media1.PNG`,
+    status: "Complete",
   },
   // {
   //   name: "BookScape",
@@ -61,30 +63,29 @@ export const projectData = [
   //   githublink: "https://github.com/ThembaMtshelwane/book-scape",
   //   image: `${path}/book-scape/book1.PNG`,
   // },
-  // {
-  //   name: "Exam Prep - Lecturer Website",
-  //   techStack: [
-  //     "TypeScript",
-  //     "React JS",
-  //     "Next JS 13",
-  //     "Chakra UI",
-  //     "Firebase",
-  //   ],
-  //   summary: "A full-stack website for lecturers to create and manage quizzes.",
-  //   responsibilities: [
-  //     "I designed the UI/UX.",
-  //     " I created and implemented the dashboard page, displaying the list of created quizzes.",
-  //     "I developed the create quiz functionality, enabling lecturers to structure quizzes in a binary tree format.",
-  //     "I devised and executed the preview and edit quiz feature, allowing lecturers to review and modify quiz questions.",
-  //     "I designed and executed the delete quiz feature.",
-  //     " I implemented the student data collection feature, facilitating data collection that can also be downloaded in an Excel document.",
-  //     "I implemented responsive web design",
-  //     "I implemented hover and focus states for all interactive elements on the page",
-  //   ],
-  //   website: "https://exam-prep-roan.vercel.app/",
-  //   githublink: "https://github.com/ThembaMtshelwane/exam-prep",
-  //   image: `${path}/lecturer/lecturer-1.jpg`,
-  // },
+  {
+    name: "Exam Prep - Lecturer Website",
+    techStack: [
+      "TypeScript",
+      "React JS",
+      "Next JS",
+      "Chakra UI",
+      "Firebase",
+    ],
+    summary: "A full-stack demo website for a Student Management System, designed specifically for lecturers to create, manage, and administer quizzes efficiently.",
+    responsibilities: [
+      "I designed the basic UI/UX.",
+      "I developed the 'Create Quiz' functionality, enabling lecturers to structure quizzes in a binary tree format.",
+      "I devised and executed the preview and edit quiz feature, allowing lecturers to review and modify quiz questions.",
+      "I designed and executed the delete quiz feature.",
+      " I implemented the student data collection feature, facilitating data collection that can also be downloaded in an Excel document.",
+      "I implemented responsive web design",
+    ],
+    website: "https://exam-prep-roan.vercel.app/",
+    githublink: "https://github.com/ThembaMtshelwane/exam-prep",
+    image: `${path}/lecturer/lecturer-1.jpg`,
+    status: "Updating",
+  },
   // {
   //   name: "Exam Prep - Student Website",
   //   techStack: ["TypeScript", "ReactJS", "NextJS 13", "Chakra UI", "Firebase"],
@@ -100,19 +101,6 @@ export const projectData = [
   //   githublink: "https://github.com/ThembaMtshelwane/exam-prep-students",
   //   image: `${path}/student/student-1.jpg`,
   // },
-  // {
-  //   name: 'Wordle',
-  //   techStack: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express'],
-  //   summary: 'This is a simple clone of the Wordle game.',
-  //   responsibilities: [
-  //     'Implemented the UI.',
-  //     'Allow a user to enter a word 5 letter word',
-  //     'Word target word updates with each refresh.'
-  //   ],
-  //   website: '',
-  //   githublink: 'https://github.com/ThembaMtshelwane/wordle-clone',
-  //   image: '/images/projects/wordle/wordle.PNG'
-  // },
   {
     name: "Lifestyle Survey",
     techStack: ["TypeScript", "ReactJS 18", "NextJS 14", "CSS", "Firebase"],
@@ -120,13 +108,13 @@ export const projectData = [
       "This is a website used to collect data about people's lifestyle preferences. The more people participate the more information we will have about people's hobbies/activities., favorite foods and age.",
     responsibilities: [
       "Survey Form: This represents the first page. Here a user is asked to complete the form. Fill out all the required fields. Click the submit button to view the results",
-      "Survey Results: This represents the second page. Here a user will see the results from all the data collected. From the number of participants, age range, popular food items and popular hobbies/activities.",
+      "Survey Results: This represents the second page. Here a user will see the statistics from all the data collected i.e. the number of participants, age range, popular food items and popular hobbies/activities.",
       "I implemented responsive web design",
-      "I implemented hover and focus states for all interactive elements on the page",
     ],
     website: "https://survey-beige-five.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/survey",
     image: `${path}/survey/survey.PNG`,
+    status: "Complete",
   },
 
   // {
@@ -152,6 +140,7 @@ export const projectData = [
     website: "https://dronoticz-projects.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/assignment-1",
     image: `${path}/dronoticz/dronoticz1.PNG`,
+    status: "Complete",
   },
   {
     name: "Recipe Page",
@@ -165,6 +154,7 @@ export const projectData = [
     website: "https://recipe-page-main-lake-seven.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/recipe-page-main",
     image: `${path}/recipe-page/recipe-page.jpg`,
+    status: "Complete",
   },
   {
     name: "Contact Form",
@@ -179,6 +169,7 @@ export const projectData = [
     website: "https://contact-form-main-pied.vercel.app/",
     githublink: "https://github.com/ThembaMtshelwane/contact-form-main",
     image: `${path}/contact-form/contact-form.jpg`,
+    status: "Complete",
   },
 
   // {

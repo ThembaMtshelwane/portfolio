@@ -3,7 +3,7 @@ import Modal from "../../Modal";
 import { ProjectDataType } from "../../../definitions";
 
 const ProjectCard = ({ project }) => {
-  const { name, image } = project;
+  const { name, image, status } = project;
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -14,6 +14,12 @@ const ProjectCard = ({ project }) => {
         <div className="wavy-border-1"></div>
         <div className="wavy-border-2"></div>
         <div className="wavy-border-3"></div>
+        {status === "Complete" ? (
+          <div className="project-status-green">{status}</div>
+        ) : (
+          <div className="project-status-yellow">{status}</div>
+        )}
+
         <section className="project-image-container">
           <img src={image} alt={name} />
         </section>
