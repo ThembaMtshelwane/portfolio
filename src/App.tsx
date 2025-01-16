@@ -36,38 +36,32 @@ export default function App() {
     [7 * start, 7 * start + window.innerHeight],
     [1, 1.5]
   );
-
-  console.log("window.innerHeight: ", window.innerHeight);
-
   return (
-    <section className="h-[1600vh] flex justify-center   border-2 border-black">
+    <div className="bg-black w-full h-[1600vh]  flex justify-center overflow-x-hidden border border-blue-800">
       <motion.div
-        className={`size-[600px] bg-red-500 my-auto fixed top-1/4 bottom-1/4 flex justify-center items-center`}
+        className={`content-container  z-10 `}
         style={{ scale, opacity }}
       >
-        This is the Hero
+        <div className="content"> This is the Hero</div>
       </motion.div>
 
       <motion.div
-        className={`size-[600px] bg-orange-500 my-auto fixed top-1/4 bottom-1/4 flex justify-center items-center`}
-        style={{ scale: scale2, opacity: opacity2, zIndex: -1 }}
+        className={`content-container   z-[9]`}
+        style={{ scale: scale2, opacity: opacity2 }}
       >
-        This is the About
+        <div className="content"> This is the About</div>
       </motion.div>
 
       <motion.div
-        className={`size-[600px] bg-yellow-500 my-auto fixed top-1/4 bottom-1/4 flex justify-center items-center`}
-        style={{ scale: scale3, opacity: opacity3, zIndex: -2 }}
+        className={`content-container  z-[8]`}
+        style={{ scale: scale3, opacity: opacity3 }}
       >
-        This is the Project
+        <div className="content"> This is the Projects</div>
       </motion.div>
 
-      <motion.div
-        className={`size-[600px] bg-green-500 my-auto fixed top-1/4 bottom-1/4 flex justify-center items-center`}
-        style={{ scale: scale4, zIndex: -3 }}
-      >
-        This is the Contact
+      <motion.div className={`content-container  `} style={{ scale: scale4 }}>
+        <div className="content"> This is the Contact</div>
       </motion.div>
-    </section>
+    </div>
   );
 }

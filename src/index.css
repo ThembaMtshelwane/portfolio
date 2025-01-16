@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.content-container {
+  @apply text-red-400 fixed m-auto rounded-full flex justify-center items-center 
+           shadow-[-4px_2px_40px_23px_#42A5F5] -top-[10%]  overflow-hidden;
+}
+
+@layer utilities {
+  .content-container {
+    @apply size-[700px];
+  }
+  @screen md {
+    .content-container {
+      @apply size-[1000px];
+    }
+  }
+}
+
+.content {
+  @apply bg-black min-w-[300px] sm:w-[60%]  md:w-[50%] h-[60%] border-[10px] border-red-400 flex justify-center items-center text-center text-lg font-semibold;
+}
