@@ -4,7 +4,7 @@
 
 .content-container {
   @apply text-red-400 fixed m-auto rounded-full flex justify-center items-center 
-           shadow-[-4px_2px_40px_23px_#42A5F5] -top-[10%]  overflow-hidden;
+           bg-black -top-[10%];
 }
 
 @layer utilities {
@@ -20,4 +20,80 @@
 
 .content {
   @apply bg-black min-w-[300px] sm:w-[60%]  md:w-[50%] h-[60%] border-[10px] border-red-400 flex justify-center items-center text-center text-lg font-semibold;
+}
+
+.emanate {
+  @apply fixed m-auto rounded-full flex justify-center items-center 
+       -top-[10%] size-[700px] md:size-[1000px];
+  background: radial-gradient(
+    circle,
+    rgba(66, 165, 245, 0.4) 20%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  animation: subtlePulse 15s infinite ease-in-out;
+  opacity: 0.6;
+  pointer-events: none; /* Ensures the circles are decorative and don't interfere */
+}
+/* Keyframes for subtle pulsating effect */
+@keyframes subtlePulse {
+  0% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Slight animation delay for staggered circles */
+@layer utilities {
+  @keyframes subtlePulse_1 {
+    0% {
+      transform: scale(1.3);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.4;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+  @keyframes subtlePulse_2 {
+    0% {
+      transform: scale(1.4);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.7);
+      opacity: 0.35;
+    }
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
+  }
+
+  @keyframes subtlePulse_3 {
+    0% {
+      transform: scale(1.2);
+      opacity: 0.4;
+    }
+    50% {
+      transform: scale(1.6);
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(2.2);
+      opacity: 0;
+    }
+  }
 }

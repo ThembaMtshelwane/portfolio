@@ -42,14 +42,15 @@ export default function App() {
         className={`content-container  z-10 `}
         style={{ scale, opacity }}
       >
-        <div className="content"> This is the Hero</div>
+        <div className="content z-10">This is the Hero</div>
       </motion.div>
 
       <motion.div
         className={`content-container   z-[9]`}
         style={{ scale: scale2, opacity: opacity2 }}
       >
-        <div className="content"> This is the About</div>
+        <div className="content"> This is the About</div>{" "}
+        {/* Subtle pulsating circles */}
       </motion.div>
 
       <motion.div
@@ -60,7 +61,20 @@ export default function App() {
       </motion.div>
 
       <motion.div className={`content-container  `} style={{ scale: scale4 }}>
-        <div className="content"> This is the Contact</div>
+        <div className="content text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+          {" "}
+          This is the Contact
+        </div>{" "}
+        {/* Subtle pulsating circles */}
+        {Array(25)
+          .fill(null)
+          .map((_, index) => (
+            <div
+              key={index}
+              className={`emanate`}
+              style={{ animationDelay: `${index *2.5}s` }}
+            ></div>
+          ))}
       </motion.div>
     </div>
   );
