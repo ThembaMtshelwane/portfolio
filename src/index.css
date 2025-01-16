@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .content-container {
-  @apply text-red-400 fixed m-auto rounded-full flex justify-center items-center 
-           bg-black -top-[10%];
+  @apply text-secondary-colour  fixed m-auto rounded-full flex justify-center items-center 
+          bg-black -top-[10%];
 }
 
 @layer utilities {
@@ -19,7 +19,7 @@
 }
 
 .content {
-  @apply bg-black min-w-[300px] sm:w-[60%]  md:w-[50%] h-[60%] border-[10px] border-red-400 flex justify-center items-center text-center text-lg font-semibold;
+  @apply bg-black min-w-[300px] sm:w-[60%]   h-[60%]  flex justify-center items-center;
 }
 
 .emanate {
@@ -96,4 +96,15 @@
       opacity: 0;
     }
   }
+}
+
+h1 {
+  @apply text-[80px] w-full font-extrabold uppercase;
+}
+
+h2 {
+  @apply text-[46px] font-semibold uppercase;
+}
+p {
+  @apply text-lg text-justify;
 }
