@@ -1,3 +1,5 @@
+import { keyframes } from "framer-motion";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -13,6 +15,19 @@ export default {
       },
       fontFamily: {
         inter: ["Inter", "Arial", "Helvetica", "sans-serif"],
+      },
+      boxShadow: {
+        blue: "0px 0px 40px 2px #000000",
+      },
+      keyframes: {
+        floating: {
+          "0%": { transform: "translateY(0) translateX(-50px)" },
+          "50%": { transform: "translateY(-10px) translateX(50px)" },
+          "100%": { transform: "translateY(0) translateX(0)" },
+        },
+      },
+      animation: {
+        floating: "floating 3s ease-in-out infinite",
       },
     },
   },

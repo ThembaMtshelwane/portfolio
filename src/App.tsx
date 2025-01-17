@@ -14,7 +14,7 @@ export default function App() {
   const opacity = useTransform(scrollY, [start, end], [1, 0]);
   const backgroundColor = useTransform(
     scrollY,
-    [1.1 * start, end],
+    [1* start, end],
     ["transparent", "#000000"]
   );
 
@@ -61,14 +61,14 @@ export default function App() {
     [1, 1.5]
   );
   return (
-    <div className="bg-black w-full h-[900vh] flex justify-center overflow-x-hidden border border-blue-800">
+    <div className="bg-black w-full h-[900vh] flex justify-center cursor-none">
       <motion.div
         className={`content-container  z-10 `}
         style={{ scale, opacity }}
       >
-        <div className="content  relative">
+        <div className="content">
           <motion.div
-            className="absolute w-full h-full"
+            className="absolute w-full h-full  bg-red-700"
             style={{ backgroundColor }}
           ></motion.div>
           <Hero />
@@ -79,7 +79,7 @@ export default function App() {
         className={`content-container z-[9]`}
         style={{ scale: scale2, opacity: opacity2 }}
       >
-        <div className="content relative">
+        <div className="content">
           <motion.div
             className="absolute w-full h-full"
             style={{ backgroundColor: backgroundColor2 }}
@@ -95,7 +95,7 @@ export default function App() {
           opacity: opacity3,
         }}
       >
-        <div className="content relative">
+        <div className="content-p">
           <motion.div
             className="absolute w-full h-full"
             style={{ backgroundColor: backgroundColor3 }}

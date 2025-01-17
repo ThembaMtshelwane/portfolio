@@ -4,7 +4,7 @@
 
 .content-container {
   @apply text-secondary-colour  fixed m-auto rounded-full flex justify-center items-center 
-          bg-black -top-[10%] shadow-[0px_0px_40px_2px_#a0c9f8];
+          bg-black -top-[10%] shadow-[0px_0px_40px_2px_#a0c9f8] cursor-default;
 }
 
 @layer utilities {
@@ -19,12 +19,15 @@
 }
 
 .content {
-  @apply bg-black min-w-[300px] sm:w-[60%]  relative h-[60%]  flex justify-center items-center;
+  @apply bg-black min-w-[300px] sm:w-[65%]  relative h-[60%]  flex justify-center items-center;
+}
+.content-p {
+  @apply bg-black relative rounded-full h-full w-full overflow-hidden;
 }
 
 .emanate {
   @apply fixed m-auto rounded-full flex justify-center items-center 
-       -top-[10%] size-[700px] md:size-[1000px];
+       -top-[10%] size-[700px] md:size-[1000px]  cursor-none;
   background: radial-gradient(
     circle,
     rgba(66, 165, 245, 0.3) 20%,
@@ -32,7 +35,6 @@
   );
   animation: gentleGlow 8s infinite ease-in-out;
   opacity: 0.5;
-  pointer-events: none;
 }
 
 /* Keyframes for gentle glowing effect */
@@ -60,4 +62,20 @@ h2 {
 }
 p {
   @apply text-lg text-justify;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Slight upward motion */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
 }
