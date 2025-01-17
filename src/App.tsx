@@ -68,14 +68,13 @@ export default function App() {
 
       <motion.div className={`content-container`} style={{ scale: scale4 }}>
         <div className="content -z-20">This is the Contact</div>
-        {/* Subtle pulsating circles */}
-        {Array(25)
+        {Array(10)
           .fill(null)
           .map((_, index) => (
             <div
               key={index}
               className={`emanate -z-[21]`}
-              style={{ animationDelay: `${index * 2.5}s` }}
+              style={{ animationDelay: `${index * 0.05}s` }}
             ></div>
           ))}
       </motion.div>
