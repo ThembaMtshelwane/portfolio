@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .content-container {
-  @apply text-secondary-colour  fixed m-auto rounded-full flex justify-center items-center 
+  @apply text-secondary-colour fixed m-auto rounded-full justify-center items-center 
           bg-black -top-[10%] shadow-[0px_0px_40px_2px_#a0c9f8] cursor-default;
 }
 
@@ -78,4 +78,8 @@ p {
 
 .animate-floating {
   animation: floating 3s ease-in-out infinite;
+}
+
+.project-image {
+  @apply h-full w-full object-cover object-center rounded-full hover:scale-110;
 }
