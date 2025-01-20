@@ -3,23 +3,29 @@
 @tailwind utilities;
 
 .content-container {
-  @apply text-secondary-colour fixed m-auto rounded-full justify-center items-center 
-          bg-black -top-[10%] shadow-[0px_0px_40px_2px_#a0c9f8] cursor-default;
+  @apply text-secondary-colour fixed  rounded-full justify-center items-center 
+          bg-black top-1/4 sm:top-[10%] md:-top-[3%] shadow-[0px_0px_40px_2px_#a0c9f8] cursor-default;
 }
 
 @layer utilities {
   .content-container {
-    @apply size-[700px];
+    @apply size-[500px];
+  }
+
+  @screen sm {
+    .content-container {
+      @apply size-[700px];
+    }
   }
   @screen md {
     .content-container {
-      @apply size-[1000px];
+      @apply size-[900px];
     }
   }
 }
 
 .content {
-  @apply bg-black min-w-[300px] sm:w-[65%]  relative h-[60%]  flex justify-center items-center;
+  @apply bg-black min-w-[300px] w-[60%]  sm:w-[65%] md:p-10 relative sm:h-[60%]  flex justify-center items-center;
 }
 .content-p {
   @apply bg-black relative rounded-full h-full w-full overflow-hidden;
@@ -27,7 +33,7 @@
 
 .emanate {
   @apply fixed m-auto rounded-full flex justify-center items-center 
-       -top-[10%] size-[700px] md:size-[1000px]  cursor-none;
+       top-1/4 size-[700px] md:size-[1000px]  cursor-none;
   background: radial-gradient(
     circle,
     rgba(66, 165, 245, 0.3) 20%,
@@ -54,14 +60,14 @@
 }
 
 h1 {
-  @apply text-[80px] w-full font-extrabold uppercase;
+  @apply text-[30px] sm:text-[50px] md:text-[80px] text-center px-48 font-extrabold uppercase;
 }
 
 h2 {
-  @apply text-[46px] font-semibold uppercase;
+  @apply text-[18px] sm:text-[30px] md:text-[50px] text-center px-48 font-semibold uppercase;
 }
 p {
-  @apply text-lg text-justify;
+  @apply sm:text-lg text-justify;
 }
 
 @keyframes floating {
