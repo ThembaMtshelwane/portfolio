@@ -6,5 +6,7 @@ export type ProjectDataType = {
   website?: string;
   githublink: string;
   image: string;
-  status: string;
+  status: "Completed" | "In Progress" | "Pending";
+  gridPosition?: string;
+  animation?: string;
 };
