@@ -56,9 +56,9 @@ const Projects = () => {
 
   return (
     <div className="grid grid-cols-12 grid-rows-12 w-full h-full">
-      <h3 className="text-4xl uppercase col-[6/7] row-[6/7] font-semibold ">
+      <h2 className=" sm:text-3xl uppercase col-[6/7] row-[6/7] font-semibold ">
         Projects.
-      </h3>
+      </h2>
 
       {projectData.map((project, index) => (
         <ProjectCard key={index} project={project} />

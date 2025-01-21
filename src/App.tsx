@@ -133,10 +133,10 @@ export default function App() {
       </motion.div>
 
       <motion.div
-        className={`content-container z-[7] ${className4}`}
+        className={`content-container z-[7]  ${className4}`}
         style={{ scale: scale4, opacity: opacity4 }}
       >
-        <div className="content">
+        <div className="content ">
           <Contact />
         </div>
       </motion.div>

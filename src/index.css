@@ -33,13 +33,13 @@
 
 .emanate {
   @apply fixed m-auto rounded-full flex justify-center items-center 
-       top-1/4 size-[700px] md:size-[1000px]  cursor-none;
+  top-1/4 sm:top-[10%] md:-top-[3%] size-[700px] md:size-[1000px]  cursor-none;
   background: radial-gradient(
     circle,
     rgba(66, 165, 245, 0.3) 20%,
     rgba(0, 0, 0, 0) 70%
   );
-  animation: gentleGlow 8s infinite ease-in-out;
+  animation: gentleGlow 2s infinite ease-in-out;
   opacity: 0.5;
 }
 
@@ -64,7 +64,7 @@ h1 {
 }
 
 h2 {
-  @apply text-[18px] sm:text-[30px] md:text-[50px] text-center px-48 font-semibold uppercase;
+  @apply text-[18px] sm:text-[30px] md:text-[50px] text-center font-semibold uppercase;
 }
 p {
   @apply sm:text-lg text-justify;
