@@ -24,10 +24,10 @@
 }
 
 .content {
-  @apply bg-black min-w-[300px] w-[60%]  sm:w-[65%] md:p-10 relative sm:h-[60%]  flex justify-center items-center;
+  @apply bg-black min-w-[300px] w-[60%]  sm:w-[65%] md:p-10 relative sm:h-[60%]  flex justify-center items-center cursor-default;
 }
 .content-p {
-  @apply bg-black relative rounded-full h-full w-full overflow-hidden;
+  @apply bg-black relative rounded-full h-full w-full overflow-hidden cursor-default;
 }
 
 .emanate {
@@ -74,7 +74,7 @@ p {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Slight upward motion */
+    transform: translateY(-10px);
   }
   100% {
     transform: translateY(0);
@@ -87,4 +87,8 @@ p {
 
 .project-image {
   @apply h-full w-full object-cover object-center rounded-full hover:scale-110;
+}
+
+.nav-circle {
+  @apply text-2xl absolute p-6 rounded-full size-[100px] bg-secondary-colour flex  items-center justify-center  cursor-pointer;
 }
