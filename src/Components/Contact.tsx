@@ -6,7 +6,7 @@ import { ImWhatsapp } from "react-icons/im";
 
 const Contact = () => {
   return (
-    <div className="w-full h-full  text-center grid grid-cols-12 grid-rows-12 justify-center flex-col items-center gap-2">
+    <div className="w-full h-full  text-center grid grid-cols-12 grid-rows-12 justify-center flex-col items-center gap-2 px-4">
       <h2 className="mb-4 col-span-12 row-span-3 ">CONTACT ME.</h2>
 
       <div className="flex col-span-full row-[5/8] md:col-span-full gap-4 justify-between h-fit">

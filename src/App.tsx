@@ -11,6 +11,21 @@ import Contact from "./Components/Contact";
 import { useState } from "react";
 
 export default function App() {
+  return (
+    <div className="bg-black w-full h-[900vh] flex justify-center cursor-none ">
+      <div className="flex flex-col fixed z-50 justify-center items-center h-screen">
+        <PortfolioSections />
+        <EmanatingRing />
+
+        <motion.div></motion.div>
+        <motion.div></motion.div>
+        <motion.div></motion.div>
+      </div>
+    </div>
+  );
+}
+
+const PortfolioSections = () => {
   const { scrollY } = useScroll();
   const [className1, setClassName1] = useState("flex");
   const [className2, setClassName2] = useState("flex");
@@ -22,11 +37,6 @@ export default function App() {
 
   const scale = useTransform(scrollY, [start, end], [1, 10]);
   const opacity = useTransform(scrollY, [start, end], [1, 0]);
-  const backgroundColor = useTransform(
-    scrollY,
-    [start, end],
-    ["transparent", "#000000"]
-  );
 
   const scale2 = useTransform(
     scrollY,
@@ -37,11 +47,6 @@ export default function App() {
     scrollY,
     [3 * start, 3 * start + window.innerHeight],
     [1, 0]
-  );
-  const backgroundColor2 = useTransform(
-    scrollY,
-    [3 * start, 3 * start + window.innerHeight],
-    ["transparent", "#000000"]
   );
 
   const scale3 = useTransform(
@@ -54,16 +59,11 @@ export default function App() {
     [5 * start, 5 * start + window.innerHeight],
     [1, 0]
   );
-  const backgroundColor3 = useTransform(
-    scrollY,
-    [1.1 * 5 * start, 5 * start + window.innerHeight],
-    ["transparent", "#000000"]
-  );
 
   const scale4 = useTransform(
     scrollY,
     [7 * start, 7 * start + window.innerHeight],
-    [1, 1.5]
+    [1, 1.2]
   );
   const opacity4 = useTransform(
     scrollY,
@@ -71,7 +71,6 @@ export default function App() {
     [1, 1.5]
   );
 
-  // Update class based on opacity value
   useMotionValueEvent(opacity, "change", (latest) => {
     setClassName1(latest === 0 ? "hidden" : "flex");
   });
@@ -87,35 +86,33 @@ export default function App() {
   useMotionValueEvent(opacity4, "change", (latest) => {
     setClassName4(latest === 0 ? "hidden" : "flex");
   });
-
   return (
-    <div className="bg-black w-full h-[900vh] flex justify-center cursor-none">
+    <>
       <motion.div
+        id="home"
         className={`content-container  z-10 ${className1}`}
         style={{ scale, opacity }}
       >
         <div className="content">
           {/* <motion.div
-            className="absolute w-full h-full"
-            // style={{ backgroundColor }}
-          ></motion.div> */}
+      className="absolute w-full h-full"
+      // style={{ backgroundColor }}
+    ></motion.div> */}
           <Hero />
         </div>
       </motion.div>
-
       <motion.div
         className={`content-container z-[9] ${className2} `}
         style={{ scale: scale2, opacity: opacity2 }}
       >
         <div className="content">
           {/* <motion.div
-            className="absolute w-full h-full"
-            // style={{ backgroundColor: backgroundColor2 }}
-          ></motion.div> */}
+      className="absolute w-full h-full"
+      // style={{ backgroundColor: backgroundColor2 }}
+    ></motion.div> */}
           <About />
         </div>
       </motion.div>
-
       <motion.div
         className={`content-container z-[8] ${className3}`}
         style={{
@@ -125,13 +122,12 @@ export default function App() {
       >
         <div className="content-p">
           {/* <motion.div
-            className="absolute w-full h-full"
-            // style={{ backgroundColor: backgroundColor3 }}
-          ></motion.div> */}
+      className="absolute w-full h-full"
+      // style={{ backgroundColor: backgroundColor3 }}
+    ></motion.div> */}
           <Projects />
         </div>
       </motion.div>
-
       <motion.div
         className={`content-container z-[7]  ${className4}`}
         style={{ scale: scale4, opacity: opacity4 }}
@@ -140,7 +136,13 @@ export default function App() {
           <Contact />
         </div>
       </motion.div>
+    </>
+  );
+};
 
+const EmanatingRing = () => {
+  return (
+    <>
       {Array(10)
         .fill(null)
         .map((_, index) => (
@@ -150,6 +152,6 @@ export default function App() {
             style={{ animationDelay: `${index * 0.05}s` }}
           ></div>
         ))}
-    </div>
+    </>
   );
-}
+};

@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 .content-container {
-  @apply text-secondary-colour fixed  rounded-full justify-center items-center 
-          bg-black top-1/4 sm:top-[10%] md:-top-[3%] shadow-[0px_0px_40px_2px_#a0c9f8] cursor-default;
+  @apply text-secondary-colour absolute rounded-full justify-center items-center bg-black  shadow-[0px_0px_40px_2px_#a0c9f8] cursor-default;
 }
 
 @layer utilities {
@@ -19,7 +18,7 @@
   }
   @screen md {
     .content-container {
-      @apply size-[900px];
+      @apply size-[1000px];
     }
   }
 }
@@ -32,8 +31,8 @@
 }
 
 .emanate {
-  @apply fixed m-auto rounded-full flex justify-center items-center 
-  top-1/4 sm:top-[10%] md:-top-[3%] size-[700px] md:size-[1000px]  cursor-none;
+  @apply absolute m-auto rounded-full flex justify-center items-center 
+   size-[700px] md:size-[1000px]  cursor-none;
   background: radial-gradient(
     circle,
     rgba(66, 165, 245, 0.3) 20%,
