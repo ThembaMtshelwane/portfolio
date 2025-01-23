@@ -90,5 +90,5 @@ p {
 }
 
 .nav-circle {
-  @apply text-2xl absolute p-6 rounded-full size-[100px] bg-secondary-colour flex  items-center justify-center  cursor-pointer;
+  @apply text-sm md:text-2xl text-secondary-colour bg-black  absolute p-6 rounded-full size-[50px] md:size-[100px] border border-e-secondary-colour flex  items-center justify-center  cursor-pointer;
 }

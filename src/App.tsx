@@ -9,6 +9,7 @@ import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import { useState } from "react";
+import NavCircles from "./Components/NavCircles";
 
 export default function App() {
   return (
@@ -16,141 +17,13 @@ export default function App() {
       <div className="flex flex-col fixed z-[999] justify-center items-center h-screen">
         <PortfolioSections />
         <EmanatingRing />
-        <div className="relative h-screen  w-screen max-w-[1440px] ">
+        <div className="relative h-screen flex justify-center items-center w-screen max-w-[1440px] ">
           <NavCircles />
         </div>
       </div>
     </div>
   );
 }
-
-const NavCircles = () => {
-  const { scrollYProgress } = useScroll();
-
-  const viewportWidth = window.innerWidth;
-  const viewportHeight = window.innerHeight;
-
-  const circleRadius = Math.min(viewportWidth, viewportHeight) * 0.4;
-  const centerX = viewportWidth / 2;
-  const centerY = viewportHeight / 2;
-
-  // Calculate rotation angle based on scroll progress
-  const rotationAngle = useTransform(scrollYProgress, [0, 1], [0, Math.PI * 2]);
-
-  // Calculate x and y positions for each nav-circle based on rotation angle
-  const xHome = useTransform(
-    rotationAngle,
-    (angle) =>
-      centerX + circleRadius * Math.cos(angle - Math.PI / 4) - circleRadius / 2
-  );
-  const yHome = useTransform(
-    rotationAngle,
-    (angle) => centerY + circleRadius * Math.sin(angle - Math.PI / 4)
-  );
-
-  const xContact = useTransform(
-    rotationAngle,
-    (angle) =>
-      centerX + circleRadius * Math.cos(angle + Math.PI / 4) - circleRadius / 2
-  );
-  const yContact = useTransform(
-    rotationAngle,
-    (angle) => centerY + circleRadius * Math.sin(angle + Math.PI / 4)
-  );
-
-  const xAbout = useTransform(
-    rotationAngle,
-    (angle) =>
-      centerX +
-      circleRadius * Math.cos(angle - (3 * Math.PI) / 4) -
-      circleRadius * 0.5
-  );
-  const yAbout = useTransform(
-    rotationAngle,
-    (angle) => centerY + circleRadius * Math.sin(angle - (3 * Math.PI) / 4)
-  );
-
-  const xProjects = useTransform(
-    rotationAngle,
-    (angle) =>
-      centerX +
-      circleRadius * Math.cos(angle + (3 * Math.PI) / 4) -
-      circleRadius / 2
-  );
-  const yProjects = useTransform(
-    rotationAngle,
-    (angle) => centerY + circleRadius * Math.sin(angle + (3 * Math.PI) / 4)
-  );
-
-  const handleHomeClick = () => {
-    scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const handleContactClick = () => {
-    scrollTo({ top: viewportHeight * 8, behavior: "smooth" });
-  };
-
-  const handleAboutClick = () => {
-    scrollTo({ top: viewportHeight * 2, behavior: "smooth" }); // Scroll to the About section
-  };
-
-  const handleProjectsClick = () => {
-    scrollTo({ top: viewportHeight * 5, behavior: "smooth" }); // Scroll to the Projects section
-  };
-
-  return (
-    <>
-      <motion.div
-        className="nav-circle"
-        style={{
-          x: xHome,
-          y: yHome,
-          position: "absolute",
-          zIndex: 20,
-        }}
-        onClick={handleHomeClick}
-      >
-        Home
-      </motion.div>
-      <motion.div
-        className="nav-circle"
-        style={{
-          x: xContact,
-          y: yContact,
-          position: "absolute",
-          zIndex: 20,
-        }}
-        onClick={handleContactClick}
-      >
-        Contact
-      </motion.div>
-      <motion.div
-        className="nav-circle"
-        style={{
-          x: xAbout,
-          y: yAbout,
-          position: "absolute",
-          zIndex: 20,
-        }}
-        onClick={handleAboutClick}
-      >
-        About
-      </motion.div>
-      <motion.div
-        className="nav-circle"
-        style={{
-          x: xProjects,
-          y: yProjects,
-          position: "absolute",
-          zIndex: 20,
-        }}
-        onClick={handleProjectsClick}
-      >
-        Projects
-      </motion.div>
-    </>
-  );
-};
 
 const PortfolioSections = () => {
   const { scrollY } = useScroll();
@@ -203,11 +76,11 @@ const PortfolioSections = () => {
   });
 
   useMotionValueEvent(opacity2, "change", (latest) => {
-    setClassName2(latest === 0 ? "hidden" : "flex");
+    setClassName2(latest < 0.5 ? "hidden" : "flex");
   });
 
   useMotionValueEvent(opacity3, "change", (latest) => {
-    setClassName3(latest === 0 ? "hidden" : "flex");
+    setClassName3(latest == 0 ? "hidden" : "flex");
   });
 
   useMotionValueEvent(opacity4, "change", (latest) => {
