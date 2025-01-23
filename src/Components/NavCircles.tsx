@@ -55,7 +55,7 @@ const NavCircles: React.FC = () => {
           y: contactPosition.y,
           zIndex: 20,
         }}
-        onClick={() => handleScrollToSection(viewportHeight * 6)}
+        onClick={() => handleScrollToSection(viewportHeight * 8)}
       >
         Contact
       </motion.div>
