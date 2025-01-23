@@ -51,9 +51,6 @@ const Projects = () => {
 
     fetchProjects();
   }, []);
-
-  console.log("projectData ", projectData);
-
   return (
     <div className="grid grid-cols-12 grid-rows-12 w-full h-full">
       <h2 className=" sm:text-3xl uppercase col-[6/7] row-[6/7] font-semibold ">
