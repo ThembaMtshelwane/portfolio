@@ -3,8 +3,12 @@
     {
       "name": "Immergence Studios",
       "techStack": ["Typescript", "React JS", "Tailwind CSS"],
-      "summary": "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content.",
-      "responsibilities": ["I designed the UI/UX.", "", ""],
+      "summary": "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content. This website represents an exercise in designing, from themes, picking colors to creating an engaing atmosphere.",
+      "responsibilities": [
+        "I designed the UI/UX.",
+        "Picking colors and the theme.",
+        "I implemented the music button feature."
+      ],
       "website": "https://immergence-studios.vercel.app/",
       "githublink": "https://github.com/ThembaMtshelwane/immergence-studios",
       "image": "./project-images/immergence-studios/immergence-studios.PNG"
@@ -12,8 +16,12 @@
     {
       "name": "Dronoticz",
       "techStack": ["React", "Tailwind"],
-      "summary": "This project is a Single Page Application. It is a responsive website built using React and CSS, based on a Figma design. The website emphasizes modern web development practices, utilizing Flexbox and the position property to create a dynamic and responsive layout.",
-      "responsibilities": ["Responsive web design", "Flexbox Layout"],
+      "summary": "This project is a Single Page Application. It is a responsive website built using React and TailwindCSS. It is based on a Figma design. The website emphasizes modern web development practices, utilizing Flexbox and the position property to create a dynamic and responsive layout.",
+      "responsibilities": [
+        "Converting a given Figma design into a website",
+        "Responsive web design",
+        "Flexbox Layout"
+      ],
       "website": "https://dronoticz-projects.vercel.app/",
       "githublink": "https://github.com/ThembaMtshelwane/assignment-1",
       "image": "./project-images/dronoticz/dronoticz1.PNG"
@@ -21,15 +29,13 @@
     {
       "name": "Enter-Stream",
       "techStack": ["TypeScript", "React JS", "Tailwind CSS", "JSON Server"],
-      "summary": "Enter-Stream is a demo streaming platform website that allows users to view a list of movies and series, as well as add, delete, and edit information about them. This website was built with React.js, Tailwind CSS and implemented based on a Figma design, showcasing practical application of design-to-code workflows.",
+      "summary": "Enter-Stream is a demo streaming platform website that allows users to view a list of movies and series, as well as add, delete, and edit them. It uses a the JSON server thus not fully deployed. More information in the repo.",
       "responsibilities": [
         "CRUD Functionality",
         "Create: Add new movies or series.",
         "Read: View a list of all movies and series",
         "Update: Edit existing movie/series information, including title, image, release year, genre, and country of origin.",
         "Delete: Remove movies or series from the list.",
-        "Multi-page Layout: The website features multiple pages to enhance the user experience.",
-        "CSS Grid: Implemented CSS Grid for a flexible and responsive layout",
         "Figma Design: The website was implemented based on a Figma design, reflecting accurate conversion from design to code."
       ],
       "website": "https://enter-stream.vercel.app/",
@@ -41,20 +47,18 @@
       "techStack": [
         "TypeScript",
         "React JS",
-        "Next JS 13",
+        "NextJS",
         "Chakra UI",
         "Firebase"
       ],
-      "summary": "A full-stack website for lecturers to create and manage quizzes.",
+      "summary": "A full-stack website for lecturers to create and manage quizzes. The quizzes are in a binary tree structure aloowing students and lectures to pinpoint problem areas.",
       "responsibilities": [
-        "I designed the UI/UX.",
-        "I created and implemented the dashboard page, displaying the list of created quizzes.",
-        "I developed the create quiz functionality, enabling lecturers to structure quizzes in a binary tree format.",
-        "I devised and executed the preview and edit quiz feature, allowing lecturers to review and modify quiz questions.",
-        "I designed and executed the delete quiz feature.",
+        "CRUD Functionality",
+        "Create: I developed the create quiz functionality, enabling lecturers to structure quizzes in a binary tree format.",
+        "Read and Update: I devised and executed the preview and edit quiz feature, allowing lecturers to review and modify quiz questions.",
+        "Delete: I designed and executed the delete quiz feature.",
         "I implemented the student data collection feature, facilitating data collection that can also be downloaded in an Excel document.",
-        "I implemented responsive web design",
-        "I implemented hover and focus states for all interactive elements on the page"
+        "I implemented responsive web design"
       ],
       "website": "https://exam-prep-roan.vercel.app/",
       "githublink": "https://github.com/ThembaMtshelwane/exam-prep",
@@ -62,13 +66,12 @@
     },
     {
       "name": "Lifestyle Survey",
-      "techStack": ["TypeScript", "ReactJS 18", "NextJS 14", "CSS", "Firebase"],
+      "techStack": ["TypeScript", "ReactJS", "NextJS", "CSS", "Firebase"],
       "summary": "This is a website used to collect data about people's lifestyle preferences. The more people participate the more information we will have about people's hobbies/activities., favorite foods and age.",
       "responsibilities": [
         "Survey Form: This represents the first page. Here a user is asked to complete the form. Fill out all the required fields. Click the submit button to view the results",
         "Survey Results: This represents the second page. Here a user will see the results from all the data collected. From the number of participants, age range, popular food items and popular hobbies/activities.",
-        "I implemented responsive web design",
-        "I implemented hover and focus states for all interactive elements on the page"
+        "I implemented responsive web design"
       ],
       "website": "https://survey-beige-five.vercel.app/",
       "githublink": "https://github.com/ThembaMtshelwane/survey",

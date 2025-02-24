@@ -13,15 +13,8 @@ const AboutSection = () => {
           Driven and skilled Software Developer with a BSc (Hons) in Information
           Engineering. Currently advancing my expertise as a Software Developer
           Intern at Tshimologong, where I specialize in creating responsive,
-          user-focused websites. Committed to solving complex problems and
+          user-focused fullstack websites. Committed to solving complex problems and
           enhancing user experiences through innovative, efficient code.
-          <a
-            className="about-link"
-            href="https://github.com/ThembaMtshelwane"
-            target="_blank"
-          >
-            GitHub
-          </a>
         </p>
       </section>
     </section>

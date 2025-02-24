@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoIosClose } from "react-icons/io";
 import { ProjectDataType } from "../definitions";
 
@@ -8,6 +8,18 @@ type ModalProps = {
   project: ProjectDataType;
 };
 const Modal: React.FC<ModalProps> = ({ open, setOpen, project }) => {
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [open]);
+
   const toggleModal = () => {
     setOpen(!open);
   };
@@ -52,7 +64,7 @@ const Modal: React.FC<ModalProps> = ({ open, setOpen, project }) => {
           </div>
 
           <h4 className="text-md font-semibold mb-2">Tasks</h4>
-          <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-300">
+          <ul className="list-disc  text-sm text-gray-700 dark:text-gray-300 pl-4">
             {project.responsibilities.map((responsibility, index) => (
               <li key={index}>{responsibility}</li>
             ))}
@@ -64,7 +76,7 @@ const Modal: React.FC<ModalProps> = ({ open, setOpen, project }) => {
           <a
             href={project.githublink}
             target="_blank"
-            className="text-blue-600 hover:text-blue-800 text-sm underline"
+            className="text-secondary-colour  hover:text-text-colour  text-sm"
             rel="noopener noreferrer"
           >
             GitHub Link
@@ -72,7 +84,7 @@ const Modal: React.FC<ModalProps> = ({ open, setOpen, project }) => {
           <a
             href={project.website}
             target="_blank"
-            className="text-blue-600 hover:text-blue-800 text-sm underline"
+            className="text-secondary-colour hover:text-text-colour  text-sm"
             rel="noopener noreferrer"
           >
             Live Website
