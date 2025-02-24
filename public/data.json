@@ -29,7 +29,7 @@
     {
       "name": "Enter-Stream",
       "techStack": ["TypeScript", "React JS", "Tailwind CSS", "JSON Server"],
-      "summary": "Enter-Stream is a demo streaming platform website that allows users to view a list of movies and series, as well as add, delete, and edit them. It uses a the JSON server thus not fully deployed. More information in the repo.",
+      "summary": "Enter-Stream is a demo streaming platform website that allows users to view a list of movies and series, as well as add, delete, and edit them. It uses a JSON server thus not fully deployed. More information in the repo.",
       "responsibilities": [
         "CRUD Functionality",
         "Create: Add new movies or series.",
@@ -51,7 +51,7 @@
         "Chakra UI",
         "Firebase"
       ],
-      "summary": "A full-stack website for lecturers to create and manage quizzes. The quizzes are in a binary tree structure aloowing students and lectures to pinpoint problem areas.",
+      "summary": "A prototype of a full-stack website for lecturers to create and manage quizzes. The quizzes are in a binary tree structure allowing students and lecturers to pinpoint problem areas.",
       "responsibilities": [
         "Create: I developed the create quiz functionality, enabling lecturers to structure quizzes in a binary tree format.",
         "Read and Update: I devised and executed the preview and edit quiz feature, allowing lecturers to review and modify quiz questions.",
