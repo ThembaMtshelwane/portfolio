@@ -53,10 +53,10 @@
       ],
       "summary": "A full-stack website for lecturers to create and manage quizzes. The quizzes are in a binary tree structure aloowing students and lectures to pinpoint problem areas.",
       "responsibilities": [
-        "CRUD Functionality",
         "Create: I developed the create quiz functionality, enabling lecturers to structure quizzes in a binary tree format.",
         "Read and Update: I devised and executed the preview and edit quiz feature, allowing lecturers to review and modify quiz questions.",
         "Delete: I designed and executed the delete quiz feature.",
+        "Firebase: Authentication, database storage for files.",
         "I implemented the student data collection feature, facilitating data collection that can also be downloaded in an Excel document.",
         "I implemented responsive web design"
       ],
