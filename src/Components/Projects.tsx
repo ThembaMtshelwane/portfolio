@@ -15,11 +15,11 @@ const Projects = () => {
     },
     {
       animation: "animate-[floating_3.5s_ease-in-out_infinite]",
-      gridPosition: "col-[6/12] row-[7/13]",
+      gridPosition: "col-[7/13] row-[7/13]",
     },
     {
       animation: "animate-[floating_4.5s_ease-in-out_infinite]",
-      gridPosition: "col-[8/13] row-[4/9]",
+      gridPosition: "col-[7/13] row-[1/7]",
     },
     {
       animation: "animate-[floating_5s_ease-in-out_infinite]",
