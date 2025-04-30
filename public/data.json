@@ -6,12 +6,11 @@
       "summary": "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content. This website represents an exercise in designing, from themes, picking colors to creating an engaing atmosphere.",
       "responsibilities": [
         "I designed the UI/UX.",
-        "Picking colors and the theme.",
-        "I implemented the music button feature."
+        "Picking colors and the theme."
       ],
-      "website": "https://immergence-studios.vercel.app/",
-      "githublink": "https://github.com/ThembaMtshelwane/immergence-studios",
-      "image": "./project-images/immergence-studios/immergence-studios.PNG"
+      "website": "https://immergence-studios-v2.vercel.app/",
+      "githublink": "https://github.com/ThembaMtshelwane/immergence-studios-v2",
+      "image": "./project-images/immergence-studios/immergence-studios-v2.PNG"
     },
     {
       "name": "Dronoticz",

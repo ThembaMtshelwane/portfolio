@@ -10,10 +10,10 @@ export const projectData = [
       "I implemented responsiveness",
       "I added audio to boost the ambiance of the UI/UX and theme",
     ],
-    website: "https://immergence-studios.vercel.app/",
-    githublink: "https://github.com/ThembaMtshelwane/immergence-studios",
-    image: `${path}/immergence-studios/immergence-studios.PNG`,
+    image: `${path}/immergence-studios/immergence-studios-v2.PNG`,
     status: "Complete",
+    website: "https://immergence-studios-v2.vercel.app/",
+    githublink: "https://github.com/ThembaMtshelwane/immergence-studios-v2",
   },
   // {
   //   name: "Summer Mixology",
@@ -65,14 +65,9 @@ export const projectData = [
   // },
   {
     name: "Exam Prep - Lecturer Website",
-    techStack: [
-      "TypeScript",
-      "React JS",
-      "Next JS",
-      "Chakra UI",
-      "Firebase",
-    ],
-    summary: "A full-stack demo website for a Student Management System, designed specifically for lecturers to create, manage, and administer quizzes efficiently.",
+    techStack: ["TypeScript", "React JS", "Next JS", "Chakra UI", "Firebase"],
+    summary:
+      "A full-stack demo website for a Student Management System, designed specifically for lecturers to create, manage, and administer quizzes efficiently.",
     responsibilities: [
       "I designed the basic UI/UX.",
       "I developed the 'Create Quiz' functionality, enabling lecturers to structure quizzes in a binary tree format.",

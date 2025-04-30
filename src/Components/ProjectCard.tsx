@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: { project: ProjectDataType }) => {
   return (
     <>
       <motion.div
-        className={`rounded-full shadow-blue ${animation} hover:z-10 ${gridPosition}`}
+        className={`cursor-pointer rounded-full shadow-blue ${animation} hover:z-10 ${gridPosition}`}
         onClick={() => setOpen((prev) => !prev)}
       >
         <img src={image} alt={image} className="project-image" />

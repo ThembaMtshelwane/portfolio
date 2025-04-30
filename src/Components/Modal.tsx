@@ -37,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({ open, setOpen, project }) => {
       >
         {/* Modal header */}
         <div className="flex justify-between items-center border-b border-gray-300 pb-3">
-          <h3 className="text-lg font-bold">{project?.name}</h3>
+          <h3 className="text-2xl font-bold">{project?.name}</h3>
           <IoIosClose
             className="text-3xl cursor-pointer hover:text-red-500"
             onClick={toggleModal}
@@ -46,25 +46,25 @@ const Modal: React.FC<ModalProps> = ({ open, setOpen, project }) => {
 
         {/* Modal body */}
         <div className="my-4">
-          <h4 className="text-md font-semibold mb-2">Description</h4>
-          <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+          <h4 className="text-lg font-semibold mb-2">Description</h4>
+          <p className=" text-gray-700 dark:text-gray-300 mb-4">
             {project.summary}
           </p>
 
-          <h4 className="text-md font-semibold mb-2">Tech Stack</h4>
+          <h4 className="text-lg  font-semibold mb-2">Tech Stack</h4>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.techStack.map((tech, index) => (
               <span
                 key={index}
-                className="text-sm border border-gray-400 rounded-md px-2 py-1 bg-gray-200 dark:bg-gray-700 dark:text-gray-100"
+                className=" border border-gray-400 rounded-md px-2 py-1 bg-gray-200 dark:bg-gray-700 dark:text-gray-100"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          <h4 className="text-md font-semibold mb-2">Tasks</h4>
-          <ul className="list-disc  text-sm text-gray-700 dark:text-gray-300 pl-4">
+          <h4 className="text-lg font-semibold mb-2">Tasks</h4>
+          <ul className="list-disc text-gray-700 dark:text-gray-300 pl-4">
             {project.responsibilities.map((responsibility, index) => (
               <li key={index}>{responsibility}</li>
             ))}
