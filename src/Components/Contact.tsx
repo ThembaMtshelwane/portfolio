@@ -11,41 +11,56 @@ const Contact = () => {
 
       <div className="flex col-span-full row-[5/8] md:col-span-full gap-4 justify-between h-fit">
         <a
-          className="animate-floating"
+          className="animate-floating group "
           href="https://www.linkedin.com/in/themba-mtshelwane/"
           target="_blank"
         >
           <FaLinkedin className="text-4xl sm:text-9xl" />
+          <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center text-sm">
+            LinkedIn
+          </p>
         </a>
         <a
-          className="animate-[floating_2s_ease-in-out_infinite]"
+          className="animate-[floating_2s_ease-in-out_infinite] group"
           href="https://github.com/ThembaMtshelwane"
           target="_blank"
         >
           <FaGithub className="text-4xl sm:text-9xl" />
+          <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center text-sm">
+            GitHub
+          </p>
         </a>
         <a
-          className="animate-[floating_5s_ease-in-out_infinite]"
+          className="animate-[floating_5s_ease-in-out_infinite] group"
           href="https://x.com/ThembaMM3"
           target="_blank"
         >
           <FaXTwitter className="text-4xl sm:text-9xl" />
+          <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center text-sm">
+            Twitter
+          </p>
         </a>
       </div>
 
       <div className="flex gap-20 col-span-full row-[10/13] items-center justify-center">
         <a
-          className="animate-[floating_3.5s_ease-in-out_infinite]"
+          className="animate-[floating_3.5s_ease-in-out_infinite] group"
           href="mailto:thembamm3@gmail.com"
         >
           <TfiEmail className="text-4xl sm:text-9xl" />
+          <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center text-sm">
+            Email
+          </p>
         </a>
         <a
-          className="animate-[floating_4s_ease-in-out_infinite]"
+          className="animate-[floating_4s_ease-in-out_infinite] group"
           href="https://wa.me/27844804140"
           target="_blank"
         >
           <ImWhatsapp className="text-4xl sm:text-9xl" />
+          <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center text-sm">
+            WhatsApp
+          </p>
         </a>
       </div>
     </div>
