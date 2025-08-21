@@ -26,20 +26,28 @@
       "image": "./project-images/dronoticz/dronoticz1.PNG"
     },
     {
-      "name": "Enter-Stream",
-      "techStack": ["TypeScript", "React JS", "Tailwind CSS", "JSON Server"],
-      "summary": "Enter-Stream is a demo streaming platform website that allows users to view a list of movies and series, as well as add, delete, and edit them. It uses a JSON server thus not fully deployed. More information in the repo.",
-      "responsibilities": [
-        "CRUD Functionality",
-        "Create: Add new movies or series.",
-        "Read: View a list of all movies and series",
-        "Update: Edit existing movie/series information, including title, image, release year, genre, and country of origin.",
-        "Delete: Remove movies or series from the list.",
-        "Figma Design: The website was implemented based on a Figma design, reflecting accurate conversion from design to code."
+      "name": "The Hive",
+      "techStack": [
+        "TypeScript",
+        "React JS",
+        "TailwindCSS",
+        "NodeJS",
+        "Express",
+        "MongoDB",
+        "Redux Toolkit",
+        "RTK Query"
       ],
-      "website": "https://enter-stream.vercel.app/",
-      "githublink": "https://github.com/ThembaMtshelwane/enter-stream",
-      "image": "./project-images/enter-stream/media1.PNG"
+      "summary": "The Hive is a full-stack web application designed to facilitate the management of students, mentors and the content associated with them. It allows Mentors to create, read, update and delete Assignments, Curricula, create Students and mark students assignments. Students can view assignments, curricula and mentors and complete their assignments .",
+      "responsibilities": [
+        "Designed the frontend using Figma a design and inspiarations from the internet.",
+        "Implemented the UI using React, TypeScript, and TailwindCSS.",
+        "Implemented the functionality through Redux Toolkit and RTK Query.",
+        "End to end testing of the application",
+        "Contributed to the design and implementation of the backend API endpoint"
+      ],
+      "website": "https://thehive-neon.vercel.app/login",
+      "githublink": "https://github.com/Hilton-J/thehive",
+      "image": "./project-images/intern-hive/media2.PNG"
     },
     {
       "name": "Exam Prep - Lecturer Website",
