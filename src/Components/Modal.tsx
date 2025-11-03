@@ -73,14 +73,17 @@ const Modal: React.FC<ModalProps> = ({ open, setOpen, project }) => {
 
         {/* Modal footer */}
         <div className="flex justify-around border-t border-gray-300 pt-4">
-          <a
-            href={project.githublink}
-            target="_blank"
-            className="text-secondary-colour  hover:text-text-colour  text-sm"
-            rel="noopener noreferrer"
-          >
-            GitHub Link
-          </a>
+          {project.githublink && (
+            <a
+              href={project.githublink}
+              target="_blank"
+              className="text-secondary-colour  hover:text-text-colour  text-sm"
+              rel="noopener noreferrer"
+            >
+              GitHub Link
+            </a>
+          )}
+
           <a
             href={project.website}
             target="_blank"

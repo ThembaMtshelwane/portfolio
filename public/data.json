@@ -46,30 +46,34 @@
         "Contributed to the design and implementation of the backend API endpoint"
       ],
       "website": "https://thehive-neon.vercel.app/login",
-      "githublink": "https://github.com/Hilton-J/thehive",
+      "githublink": "",
       "image": "./project-images/intern-hive/media2.PNG"
     },
     {
-      "name": "Exam Prep - Lecturer Website",
+      "name": "Mosele.Afrika",
       "techStack": [
         "TypeScript",
         "React JS",
-        "NextJS",
-        "Chakra UI",
-        "Firebase"
+        "TailwindCSS",
+        "Express",
+        "NodeJS",
+        "MongoDB",
+        "Redux Toolkit",
+        "RTK Query",
+        "PayFast Integration"
       ],
-      "summary": "A prototype of a full-stack website for lecturers to create and manage quizzes. The quizzes are in a binary tree structure allowing students and lecturers to pinpoint problem areas.",
+      "summary": "A platform for South African authors to showcase, crowdfund, and sell books.  ",
       "responsibilities": [
-        "Create: I developed the create quiz functionality, enabling lecturers to structure quizzes in a binary tree format.",
-        "Read and Update: I devised and executed the preview and edit quiz feature, allowing lecturers to review and modify quiz questions.",
-        "Delete: I designed and executed the delete quiz feature.",
-        "Firebase: Authentication, database storage for files.",
-        "I implemented the student data collection feature, facilitating data collection that can also be downloaded in an Excel document.",
-        "I implemented responsive web design"
+        "Managed end-to-end project lifecycle including planning, UI/UX design, implementation and testing.",
+        "Lead early iterations of the frontend planning phase through effective communication via meetings  and task delegation within the team.",
+        "Implemented the frontend using React, TypeScript, and TailwindCSS.",
+        "Implemented the backed using NodeJS, Express, and MongoDB.",
+        "Implemented state management and API interactions using Redux Toolkit and RTK Query.",
+        "Integrated PayFast payment gateway for secure transactions."
       ],
-      "website": "https://exam-prep-roan.vercel.app/",
-      "githublink": "https://github.com/ThembaMtshelwane/exam-prep",
-      "image": "./project-images/lecturer/lecturer-1.jpg"
+      "website": "https://mosele.vercel.app/",
+      "githublink": "",
+      "image": "./project-images/mosele/mosele-afrika.PNG"
     }
   ]
 }
