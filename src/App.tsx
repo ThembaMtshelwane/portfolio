@@ -1,5 +1,11 @@
+import SouthernSkyParallax from "./components/ui/SouthernSkyParallax";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <SouthernSkyParallax />
+    </>
+  );
 }
 
 export default App;
