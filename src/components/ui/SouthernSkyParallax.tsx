@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useCallback } from "react";
 import About from "../../pages/About";
+import Hero from "../../pages/Hero";
 
 interface Star {
   x: number;
@@ -250,6 +251,7 @@ const SouthernSkyParallax: React.FC = () => {
       <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none" />
       <div className="relative z-10">
         {/* content unchanged */}
+        <Hero />
         <About />
       </div>
     </div>
