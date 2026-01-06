@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useCallback } from "react";
 import About from "../../pages/About";
 import Hero from "../../pages/Hero";
+import Projects from "../../pages/Projects";
 
 interface Star {
   x: number;
@@ -253,6 +254,7 @@ const SouthernSkyParallax: React.FC = () => {
         {/* content unchanged */}
         <Hero />
         <About />
+        <Projects />
       </div>
     </div>
   );
