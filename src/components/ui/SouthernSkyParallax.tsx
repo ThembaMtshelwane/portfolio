@@ -46,18 +46,19 @@ const SouthernSkyParallax: React.FC = () => {
   const starsRef = useRef<Star[]>([]);
   const orionRef = useRef<Constellation | null>(null);
 
+  const [isBooted, setIsBooted] = useState(false);
+  const [starsLoaded, setStarsLoaded] = useState(false);
+
   const viewportRef = useRef({
     w: window.innerWidth,
     h: window.innerHeight + 2000,
     dpr: Math.min(window.devicePixelRatio || 1, 2),
   });
 
-  const [isBooted, setIsBooted] = useState(false);
-
   /* ------------------ INIT DATA ------------------ */
   useEffect(() => {
     /* Background stars */
-    starsRef.current = Array.from({ length: 400 }, () => {
+    starsRef.current = Array.from({ length: 20 }, () => {
       const twinkles = Math.random() < 0.35;
       return {
         x: Math.random() * 100,
@@ -101,6 +102,12 @@ const SouthernSkyParallax: React.FC = () => {
         [0, 1],
       ],
     };
+
+    const handle = requestAnimationFrame(() => {
+      setStarsLoaded(true);
+    });
+
+    return () => cancelAnimationFrame(handle);
   }, []);
 
   /* ------------------ SCROLL ------------------ */
@@ -282,7 +289,16 @@ const SouthernSkyParallax: React.FC = () => {
 
   return (
     <div className="relative bg-black overflow-x-hidden">
-      {!isBooted && <LoadingScreen onFinished={() => setIsBooted(true)} />}
+      {!isBooted && (
+        <LoadingScreen
+          onFinished={() => {
+            // Only allow the loading screen to exit if stars are actually ready
+            if (starsLoaded) {
+              setIsBooted(true);
+            }
+          }}
+        />
+      )}
 
       <div
         className={`transition-opacity duration-1000 ${
