@@ -25,7 +25,7 @@ I am a Fullstack Developer with a solid grasp of the entire **Software Developme
 * **State Management:** Redux ToolKit, Context API
 
 ### 📡 Engineering Modules
-* **Software Design:** Object-Oriented Programming (OOP), MVC Architecture, Unit Testing (Doctest)
+* **Software Design:** Object-Oriented Programming (OOP), MVC Architecture, Unit Testing (Doctest and Jest)
 * **Cloud Architecture:** Pursuing AWS Solutions Architect - Associate
 * **Tools:** Git/GitHub (v-3 Branch Management), Figma, Trello
 
