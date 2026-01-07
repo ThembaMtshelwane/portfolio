@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
       {/* HUD / Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Top Left: Coordinates */}
-        <div className="absolute top-10 left-10 border-l border-t border-white/20 p-4 hidden md:block">
+        <div className="absolute bottom-20 left-10 border-l border-b border-white/20 p-4 hidden md:block">
           <p className="text-[10px] text-blue-400 font-mono tracking-[0.2em] uppercase">
             Location: Southern Hemisphere
           </p>

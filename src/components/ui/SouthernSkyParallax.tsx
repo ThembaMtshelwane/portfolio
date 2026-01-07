@@ -6,6 +6,7 @@ import Contact from "../../pages/Contact";
 import LoadingScreen from "../../pages/LoadingScreen";
 import SkillsCarousel from "../../pages/SkillsCarousel";
 import Lenis from "lenis";
+import Navbar from "./Navbar";
 
 interface Star {
   x: number;
@@ -37,6 +38,7 @@ const SouthernSkyParallax: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number>(0);
   const lenisRef = useRef<Lenis | null>(null);
+  const [lenisInstance, setLenisInstance] = useState<any>(null);
 
   const scrollTargetRef = useRef(0);
   const scrollCurrentRef = useRef(0);
@@ -115,6 +117,7 @@ const SouthernSkyParallax: React.FC = () => {
     });
 
     lenisRef.current = lenis;
+    setLenisInstance(lenis);
 
     // Synchronize Lenis with your scrollTargetRef
     const onLenisScroll = (e: any) => {
@@ -279,23 +282,31 @@ const SouthernSkyParallax: React.FC = () => {
 
   return (
     <div className="relative bg-black overflow-x-hidden">
-      {/* 1. Show Loading Screen until sequence is finished */}
       {!isBooted && <LoadingScreen onFinished={() => setIsBooted(true)} />}
 
-      {/* 2. Main Content stays hidden or inactive until booted */}
       <div
         className={`transition-opacity duration-1000 ${
           isBooted ? "opacity-100" : "opacity-0"
         }`}
       >
+        <Navbar lenis={lenisInstance} />
+
         <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none" />
 
         <div className="relative z-10">
-          <Hero />
-          <About />
+          <section id="hero">
+            <Hero />
+          </section>
+          <section id="about">
+            <About />
+          </section>
           <SkillsCarousel />
-          <Projects />
-          <Contact />
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </div>
       </div>
     </div>
