@@ -4,6 +4,7 @@ import Hero from "../../pages/Hero";
 import Projects from "../../pages/Projects";
 import Contact from "../../pages/Contact";
 import LoadingScreen from "../../pages/LoadingScreen";
+import SkillsCarousel from "../../pages/SkillsCarousel";
 
 interface Star {
   x: number;
@@ -267,6 +268,7 @@ const SouthernSkyParallax: React.FC = () => {
         <div className="relative z-10">
           <Hero />
           <About />
+          <SkillsCarousel />
           <Projects />
           <Contact />
         </div>
