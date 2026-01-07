@@ -50,7 +50,7 @@ const Navbar: React.FC<{ lenis: any }> = ({ lenis }) => {
           <div className="flex items-center gap-4 relative z-110">
             <div
               onClick={(e) => scrollToSection(e, "hero")}
-              className="relative"
+              className="relative cursor-pointer"
             >
               <div className="w-10 h-10 border border-blue-500/50 rounded-lg flex items-center justify-center rotate-45">
                 <span className="text-white font-black -rotate-45 text-xl tracking-tighter">
