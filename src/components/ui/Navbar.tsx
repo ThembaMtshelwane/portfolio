@@ -70,8 +70,8 @@ const Navbar: React.FC<{ lenis: any }> = ({ lenis }) => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <ul className="flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 ">
+            <ul className="flex items-center gap-8 mb-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <button
