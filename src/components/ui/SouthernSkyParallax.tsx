@@ -5,6 +5,7 @@ import Projects from "../../pages/Projects";
 import Contact from "../../pages/Contact";
 import LoadingScreen from "../../pages/LoadingScreen";
 import SkillsCarousel from "../../pages/SkillsCarousel";
+import Lenis from "lenis";
 
 interface Star {
   x: number;
@@ -35,6 +36,7 @@ interface Constellation {
 const SouthernSkyParallax: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number>(0);
+  const lenisRef = useRef<Lenis | null>(null);
 
   const scrollTargetRef = useRef(0);
   const scrollCurrentRef = useRef(0);
@@ -100,15 +102,38 @@ const SouthernSkyParallax: React.FC = () => {
   }, []);
 
   /* ------------------ SCROLL ------------------ */
-  const onScroll = useCallback(() => {
-    scrollTargetRef.current = window.scrollY;
-  }, []);
-
   useEffect(() => {
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [onScroll]);
+    // Initialize Lenis for smooth scrolling
+    const lenis = new Lenis({
+      duration: 1.5, // How long the scroll animation lasts
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth cubic easing
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
+    });
 
+    lenisRef.current = lenis;
+
+    // Synchronize Lenis with your scrollTargetRef
+    const onLenisScroll = (e: any) => {
+      scrollTargetRef.current = e.animatedScroll;
+    };
+
+    lenis.on("scroll", onLenisScroll);
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
   /* ------------------ CANVAS LOOP ------------------ */
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -177,7 +202,7 @@ const SouthernSkyParallax: React.FC = () => {
       const { w, h } = viewportRef.current;
 
       scrollCurrentRef.current +=
-        (scrollTargetRef.current - scrollCurrentRef.current) * 0.08;
+        (scrollTargetRef.current - scrollCurrentRef.current) * 0.12;
 
       const scrollY = scrollCurrentRef.current;
       const t = time * 0.001;
