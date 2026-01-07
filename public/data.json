@@ -24,7 +24,7 @@
       ],
       "website": "https://mosele.vercel.app/",
       "githublink": "",
-      "image": "./project-images/mosele/mosele-afrika.PNG"
+      "image": "./project-images/mosele/mosele-afrika.webp"
     },
     {
       "name": "The Hive",
@@ -48,7 +48,7 @@
       ],
       "website": "https://thehive-neon.vercel.app/login",
       "githublink": "",
-      "image": "./project-images/intern-hive/media2.PNG"
+      "image": "./project-images/intern-hive/media2.webp"
     },
     {
       "name": "Immergence Studios",
@@ -60,7 +60,7 @@
       ],
       "website": "https://immergence-studios-v2.vercel.app/",
       "githublink": "https://github.com/ThembaMtshelwane/immergence-studios-v2",
-      "image": "./project-images/immergence-studios/immergence-studios-v2.PNG"
+      "image": "./project-images/immergence-studios/immergence-studios-v2.webp"
     },
     {
       "name": "Dronoticz",
@@ -73,7 +73,7 @@
       ],
       "website": "https://dronoticz-projects.vercel.app/",
       "githublink": "https://github.com/ThembaMtshelwane/assignment-1",
-      "image": "./project-images/dronoticz/dronoticz1.PNG"
+      "image": "./project-images/dronoticz/dronoticz1.webp"
     }
   ]
 }
