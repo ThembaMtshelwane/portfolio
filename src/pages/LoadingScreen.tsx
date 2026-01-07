@@ -45,12 +45,12 @@ const LoadingScreen: React.FC<{ onFinished: () => void }> = ({
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black transition-transform duration-1000 ease-in-out ${
+      className={`fixed inset-0 z-100 flex flex-col items-center justify-center bg-black transition-transform duration-1000 ease-in-out ${
         isExiting ? "-translate-y-full" : "translate-y-0"
       }`}
     >
       {/* Background Decorative Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:40px_40px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-size-[40px_40px]" />
 
       <div className="relative w-full max-w-md px-6">
         {/* Top HUD Detail */}
@@ -96,7 +96,7 @@ const LoadingScreen: React.FC<{ onFinished: () => void }> = ({
 
       {/* Scanning Line */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="w-full h-1/4 bg-gradient-to-b from-blue-500/5 to-transparent -translate-y-full animate-loader-scan" />
+        <div className="w-full h-1/4 bg-linear-to-b from-blue-500/5 to-transparent -translate-y-full animate-loader-scan" />
       </div>
 
       <style>{`

@@ -21,7 +21,7 @@ const About: React.FC = () => {
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-blue-500 to-transparent" />
             </div>
 
-            <div className="space-y-6 text-gray-300 text-lg md:text-xl leading-relaxed font-light">
+            <div className="backdrop-blur-md space-y-6 text-gray-300 text-lg md:text-xl leading-relaxed font-light">
               <p>
                 I'm an efficient Software Developer with a{" "}
                 <span className="text-white font-medium">
@@ -47,7 +47,7 @@ const About: React.FC = () => {
           </div>
 
           {/* Right Column: "Orbital" Stats & Skills */}
-          <div className="lg:col-span-5 grid grid-cols-1 gap-4">
+          <div className="lg:col-span-5 grid grid-cols-1 gap-4 backdrop-blur-md">
             <div className="group p-8 bg-black/40 border border-white/10 rounded-3xl hover:border-blue-500/50 transition-all duration-500">
               <h3 className="text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">
                 Current Trajectory

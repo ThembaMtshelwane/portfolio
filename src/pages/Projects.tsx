@@ -12,7 +12,7 @@ interface ProjectData {
 
 // 1. Memoized Skeleton Component for Performance
 const ProjectSkeleton = () => (
-  <div className="relative p-8 bg-white/5 border border-white/10 rounded-lg overflow-hidden min-h-[400px]">
+  <div className="relative p-8 bg-white/5 border border-white/10 rounded-lg overflow-hidden min-h-100">
     <div className="flex justify-between mb-6">
       <div className="w-24 h-4 bg-white/10 animate-pulse rounded" />
       <div className="w-8 h-8 rounded-full bg-white/10 animate-pulse" />
@@ -24,7 +24,7 @@ const ProjectSkeleton = () => (
       <div className="w-5/6 h-3 bg-white/5 animate-pulse rounded" />
     </div>
     {/* Animated "Scanning" bar for the skeleton */}
-    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-transparent h-1/2 w-full animate-scan-slow pointer-events-none" />
+    <div className="absolute inset-0 bg-linear-to-b from-transparent via-blue-500/5 to-transparent h-1/2 w-full animate-scan-slow pointer-events-none" />
   </div>
 );
 
@@ -64,14 +64,14 @@ const ProjectsSection: React.FC = () => {
         {/* Header Section */}
         <div className="mb-20">
           <div className="flex items-center gap-3 mb-2">
-            <span className="w-8 h-[1px] bg-blue-500"></span>
+            <span className="w-8 h-px bg-blue-500"></span>
             <span className="text-blue-400 font-mono text-xs tracking-widest uppercase">
               {loading ? "Establishing Link..." : "Orbital Archive"}
             </span>
           </div>
           <h2 className="text-6xl md:text-8xl font-black text-white italic uppercase tracking-tighter">
             Mission{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-100">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-100">
               Manifest
             </span>
           </h2>
@@ -93,7 +93,7 @@ const ProjectsSection: React.FC = () => {
         )}
 
         {/* Dynamic Grid / Skeleton Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-[800px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-200">
           {loading
             ? // Show 4 Skeletons while loading
               Array.from({ length: 4 }).map((_, i) => (
@@ -171,7 +171,7 @@ const ProjectCard = memo(
             loading="lazy" // Native lazy loading for performance
             className="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700 grayscale group-hover:grayscale-0"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent" />
         </div>
 
         <div className="space-y-3">

@@ -48,17 +48,19 @@ const Contact: React.FC = () => {
             </p>
           </a>
 
-          {/* Phone Card */}
+          {/* LinkedIn Card  */}
           <a
-            href="tel:0844804140"
-            className="group p-8 bg-white/5 border border-white/10 rounded-2xl hover:border-blue-500/50 hover:bg-blue-500/5 transition-all duration-300"
+            href="https://www.linkedin.com/in/themba-mtshelwane/"
+            target="_blank"
+            rel="noreferrer"
+            className="group p-8 bg-blue-500/5 border border-blue-500/20 rounded-2xl hover:border-blue-400/50 hover:bg-blue-500/10 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)]"
           >
-            <p className="text-[10px] font-mono text-blue-500 mb-2 tracking-widest uppercase">
-              Secure_Line
+            <p className="text-[10px] font-mono text-blue-400 mb-2 tracking-widest uppercase italic">
+              Professional_Network
             </p>
-            <h3 className="text-white text-xl font-bold mb-1">Mobile</h3>
-            <p className="text-gray-400 group-hover:text-blue-300 transition-colors">
-              084 480 4140
+            <h3 className="text-white text-xl font-bold mb-1">LinkedIn</h3>
+            <p className="text-blue-300/80 group-hover:text-blue-200 transition-colors font-mono text-xs">
+              VIEW_PROFILE_SIGNAL ↗
             </p>
           </a>
 

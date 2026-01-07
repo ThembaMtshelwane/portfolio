@@ -1,32 +1,51 @@
-import React from 'react';
+import React from "react";
 
-/**
- * Skills derived from professional experience in the React Ecosystem 
- * and BSc (Electrical) Information Engineering[cite: 5, 6, 11].
- */
 const SkillsCarousel: React.FC = () => {
   const technicalSkills = [
-    "TypeScript", "React", "Node.js", "Express", "MongoDB", 
-    "Tailwind CSS", "Redux ToolKit", "RESTful APIs", "Firebase", 
-    "SupaBase", "Next.js", "Chakra UI", "Figma", "Vercel", "C++", "SFML"
-  ]; 
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Tailwind CSS",
+    "Redux ToolKit",
+    "RESTful APIs",
+    "Firebase",
+    "Next.js",
+    "Figma",
+    "Vercel",
+    "Jest",
+  ];
 
   const softSkills = [
-    "Problem Solving", "Attention to Detail", "Critical Thinking", 
-    "Time Management", "Adaptability", "Creativity", "Communication"
-  ]; 
+    "Problem Solving",
+    "Attention to Detail",
+    "Critical Thinking",
+    "Time Management",
+    "Adaptability",
+    "Creativity",
+    "Communication",
+  ];
 
-  const renderTicker = (items: string[], direction: 'left' | 'right', speed: string) => {
+  const renderTicker = (
+    items: string[],
+    direction: "left" | "right",
+    speed: string
+  ) => {
     return (
       <div className="flex overflow-hidden mb-4 select-none">
-        <div 
-          className={`flex whitespace-nowrap py-2 ${direction === 'left' ? 'animate-scroll-left' : 'animate-scroll-right'}`} 
+        <div
+          className={`flex whitespace-nowrap py-2 ${
+            direction === "left"
+              ? "animate-scroll-left"
+              : "animate-scroll-right"
+          }`}
           style={{ animationDuration: speed }}
         >
           {/* We use 3 sets to ensure a perfectly smooth, infinite loop */}
           {[...items, ...items, ...items].map((item, index) => (
-            <div 
-              key={`${item}-${index}`} 
+            <div
+              key={`${item}-${index}`}
               className="mx-4 flex items-center gap-3 px-5 py-2 bg-blue-500/5 border border-white/5 rounded-sm hover:border-blue-500/40 transition-colors"
             >
               <span className="text-[10px] font-mono text-blue-500/50">//</span>
@@ -44,15 +63,15 @@ const SkillsCarousel: React.FC = () => {
     <section className="py-20 bg-black/40 relative border-y border-white/5">
       <div className="max-w-7xl mx-auto px-4 mb-10">
         <div className="flex items-center gap-4">
-          <div className="h-[1px] w-12 bg-blue-500/50" />
+          <div className="h-px w-12 bg-blue-500/50" />
           <h3 className="text-sm font-mono text-blue-400 tracking-[0.4em] uppercase">
             System_Capabilities
           </h3>
         </div>
       </div>
 
-      {renderTicker(technicalSkills, 'left', '80s')}
-      {renderTicker(softSkills, 'right', '100s')}
+      {renderTicker(technicalSkills, "left", "80s")}
+      {renderTicker(softSkills, "right", "100s")}
 
       <style>{`
         @keyframes scroll-left {
