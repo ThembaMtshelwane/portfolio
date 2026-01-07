@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useCallback, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import About from "../../pages/About";
 import Hero from "../../pages/Hero";
 import Projects from "../../pages/Projects";
