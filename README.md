@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# 🛰️ SOUTHERN SKY PORTFOLIO v3.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**High-Performance Fullstack Portfolio | Information Engineering Edition**
 
-Currently, two official plugins are available:
+An advanced, smooth-scroll mission control dashboard showcasing the intersection of Information Engineering and Fullstack Development. Built with the MERN stack and optimized for cinematic performance using Lenis and GPU-accelerated starfield rendering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👨‍🚀 Mission Log: Themba Mtshelwane
+> **Current Status:** 🥇 1st Place Winner - Samsung Tshimologong Program (2024/2025)  
+> **Location:** Johannesburg, ZA (Base Station)  
+> **Education:** BSc (Electrical) Information Engineering - Wits University  
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+I am a Fullstack Developer with a solid grasp of the entire **Software Development Lifecycle (SDLC)**. My work focuses on building robust, scalable React ecosystems with a heavy emphasis on performance, math-driven animations, and clean state management.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technical Arsenal (Telemetry Readout)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🛸 Core Orbital Stack
+* **Languages:** TypeScript (Expert), JavaScript (ES6+), C++ (Academic/SFML)
+* **Frontend:** React, Next.js, Redux Toolkit, Tailwind CSS, Chakra UI
+* **Backend:** Node.js, Express, RESTful APIs, JWT Authentication
+* **Cloud & Database:** MongoDB, Firebase, SupaBase, Vercel
+* **State Management:** Redux ToolKit, Context API
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📡 Engineering Modules
+* **Software Design:** Object-Oriented Programming (OOP), MVC Architecture, Unit Testing (Doctest)
+* **Cloud Architecture:** Pursuing AWS Solutions Architect - Associate
+* **Tools:** Git/GitHub (v-3 Branch Management), Figma, Trello
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Key Features in v3.0
+* **Cinematic Scrolling:** Integrated **Lenis** for smooth, momentum-based navigation.
+* **Active HUD:** Custom Navbar with **Intersection Observer** for real-time section tracking.
+* **Parallax Starfield:** Optimized Canvas-based rendering of the Southern Sky constellations.
+* **System Boot-up:** Interactive terminal-style loading sequence.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🏁 System Uplink
+* **LinkedIn:** [themba-mtshelwane](https://www.linkedin.com/in/themba-mtshelwane-17b502213/)
+* **GitHub:** [@ThembaMtshelwane](https://github.com/ThembaMtshelwane)
+* **Email:** Thembamm3@gmail.com
+
+---
+*Created with precision by Themba Mtshelwane. © 2026*
