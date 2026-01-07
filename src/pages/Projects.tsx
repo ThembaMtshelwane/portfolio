@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { useEffect, useState, memo } from "react";
 
 interface ProjectData {
   name: string;
@@ -11,134 +11,52 @@ interface ProjectData {
 }
 
 // 1. Memoized Skeleton Component for Performance
-// const ProjectSkeleton = () => (
-//   <div className="relative p-8 bg-white/5 border border-white/10 rounded-lg overflow-hidden min-h-100">
-//     <div className="flex justify-between mb-6">
-//       <div className="w-24 h-4 bg-white/10 animate-pulse rounded" />
-//       <div className="w-8 h-8 rounded-full bg-white/10 animate-pulse" />
-//     </div>
-//     <div className="w-3/4 h-8 bg-white/10 animate-pulse rounded mb-4" />
-//     <div className="w-full aspect-video bg-white/5 rounded mb-6 animate-pulse border border-white/5" />
-//     <div className="space-y-2">
-//       <div className="w-full h-3 bg-white/5 animate-pulse rounded" />
-//       <div className="w-5/6 h-3 bg-white/5 animate-pulse rounded" />
-//     </div>
-//     {/* Animated "Scanning" bar for the skeleton */}
-//     <div className="absolute inset-0 bg-linear-to-b from-transparent via-blue-500/5 to-transparent h-1/2 w-full animate-scan-slow pointer-events-none" />
-//   </div>
-// );
+const ProjectSkeleton = () => (
+  <div className="relative p-8 bg-white/5 border border-white/10 rounded-lg overflow-hidden min-h-100">
+    <div className="flex justify-between mb-6">
+      <div className="w-24 h-4 bg-white/10 animate-pulse rounded" />
+      <div className="w-8 h-8 rounded-full bg-white/10 animate-pulse" />
+    </div>
+    <div className="w-3/4 h-8 bg-white/10 animate-pulse rounded mb-4" />
+    <div className="w-full aspect-video bg-white/5 rounded mb-6 animate-pulse border border-white/5" />
+    <div className="space-y-2">
+      <div className="w-full h-3 bg-white/5 animate-pulse rounded" />
+      <div className="w-5/6 h-3 bg-white/5 animate-pulse rounded" />
+    </div>
+    {/* Animated "Scanning" bar for the skeleton */}
+    <div className="absolute inset-0 bg-linear-to-b from-transparent via-blue-500/5 to-transparent h-1/2 w-full animate-scan-slow pointer-events-none" />
+  </div>
+);
 
 const ProjectsSection: React.FC = () => {
-  // const [projects, setProjects] = useState<ProjectData[]>([]);
-  // const [loading, setLoading] = useState(true);
-  // const [error, setError] = useState<string | null>(null);
+  const [projects, setProjects] = useState<ProjectData[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const projects = [
-    {
-      name: "Mosele.Afrika",
-      techStack: [
-        "TypeScript",
-        "React JS",
-        "TailwindCSS",
-        "Express",
-        "NodeJS",
-        "MongoDB",
-        "Redux Toolkit",
-        "RTK Query",
-        "PayFast Integration",
-      ],
-      summary:
-        "A platform for South African authors to showcase, crowdfund, and sell books.  ",
-      responsibilities: [
-        "Managed end-to-end project lifecycle including planning, UI/UX design, implementation and testing.",
-        "Lead early iterations of the frontend planning phase through effective communication via meetings  and task delegation within the team.",
-        "Implemented the frontend using React, TypeScript, and TailwindCSS.",
-        "Implemented the backed using NodeJS, Express, and MongoDB.",
-        "Implemented state management and API interactions using Redux Toolkit and RTK Query.",
-        "Integrated PayFast payment gateway for secure transactions.",
-      ],
-      website: "https://mosele.vercel.app/",
-      githublink: "",
-      image: "./project-images/mosele/mosele-afrika.webp",
-    },
-    {
-      name: "The Hive",
-      techStack: [
-        "TypeScript",
-        "React JS",
-        "TailwindCSS",
-        "NodeJS",
-        "Express",
-        "MongoDB",
-        "Redux Toolkit",
-        "RTK Query",
-      ],
-      summary:
-        "The Hive is a full-stack web application designed to facilitate the management of students, mentors and the content associated with them. It allows Mentors to create, read, update and delete Assignments, Curricula, create Students and mark students assignments. Students can view assignments, curricula and mentors and complete their assignments.Demo users: email:mentor@domain.com and password thehive2025 ; email: karabo.molefe@example.com and password: thehive2025",
-      responsibilities: [
-        "Designed the frontend using Figma a design and inspiarations from the internet.",
-        "Implemented the UI using React, TypeScript, and TailwindCSS.",
-        "Implemented the functionality through Redux Toolkit and RTK Query.",
-        "End to end testing of the application",
-        "Contributed to the design and implementation of the backend API endpoint",
-      ],
-      website: "https://thehive-neon.vercel.app/login",
-      githublink: "",
-      image: "./project-images/intern-hive/media2.webp",
-    },
-    {
-      name: "Immergence Studios",
-      techStack: ["Typescript", "React JS", "Tailwind CSS"],
-      summary:
-        "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content. This website represents an exercise in designing, from themes, picking colors to creating an engaing atmosphere.",
-      responsibilities: [
-        "I designed the UI/UX.",
-        "Picking colors and the theme.",
-      ],
-      website: "https://immergence-studios-v2.vercel.app/",
-      githublink: "https://github.com/ThembaMtshelwane/immergence-studios-v2",
-      image: "./project-images/immergence-studios/immergence-studios-v2.webp",
-    },
-    {
-      name: "Dronoticz",
-      techStack: ["React", "Tailwind"],
-      summary:
-        "This project is a Single Page Application. It is a responsive website built using React and TailwindCSS. It is based on a Figma design. The website emphasizes modern web development practices, utilizing Flexbox and the position property to create a dynamic and responsive layout.",
-      responsibilities: [
-        "Converting a given Figma design into a website",
-        "Responsive web design",
-        "Flexbox Layout",
-      ],
-      website: "https://dronoticz-projects.vercel.app/",
-      githublink: "https://github.com/ThembaMtshelwane/assignment-1",
-      image: "./project-images/dronoticz/dronoticz1.webp",
-    },
-  ];
+  useEffect(() => {
+    const abortController = new AbortController();
 
-  // useEffect(() => {
-  //   const abortController = new AbortController();
+    const fetchProjects = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch("./data.json", {
+          signal: abortController.signal,
+        });
+        if (!response.ok) throw new Error("Connection Interrupted");
+        const data = await response.json();
+        setProjects(data.projectData);
+      } catch (err: any) {
+        if (err.name !== "AbortError") {
+          setError(err.message);
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  //   const fetchProjects = async () => {
-  //     try {
-  //       setLoading(true);
-  //       const response = await fetch("./data.json", {
-  //         signal: abortController.signal,
-  //       });
-  //       if (!response.ok) throw new Error("Connection Interrupted");
-  //       const data = await response.json();
-  //       setProjects(data.projectData);
-  //     } catch (err: any) {
-  //       if (err.name !== "AbortError") {
-  //         setError(err.message);
-  //       }
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchProjects();
-  //   return () => abortController.abort(); // Cleanup on unmount
-  // }, []);
+    fetchProjects();
+    return () => abortController.abort(); // Cleanup on unmount
+  }, []);
 
   return (
     <section className="min-h-screen py-24 px-4 relative">
@@ -148,7 +66,7 @@ const ProjectsSection: React.FC = () => {
           <div className="flex items-center gap-3 mb-2">
             <span className="w-8 h-px bg-blue-500"></span>
             <span className="text-blue-400 font-mono text-xs tracking-widest uppercase">
-              {/* {loading ? "Establishing Link..." : "Orbital Archive"} */}
+              {loading ? "Establishing Link..." : "Orbital Archive"}
             </span>
           </div>
           <h2 className="text-6xl md:text-8xl font-black text-white italic uppercase tracking-tighter">
@@ -160,7 +78,7 @@ const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Error State */}
-        {/* {error && (
+        {error && (
           <div className="p-8 border border-red-500/50 bg-red-500/10 rounded text-center">
             <p className="text-red-400 font-mono uppercase tracking-widest text-sm mb-2 italic">
               ⚠️ Uplink Error: {error}
@@ -172,13 +90,22 @@ const ProjectsSection: React.FC = () => {
               RETRY CONNECTION
             </button>
           </div>
-        )} */}
+        )}
 
         {/* Dynamic Grid / Skeleton Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-200">
-          {projects.map((project, index) => (
-            <ProjectCard key={project.name} project={project} index={index} />
-          ))}
+          {loading
+            ? // Show 4 Skeletons while loading
+              Array.from({ length: 4 }).map((_, i) => (
+                <ProjectSkeleton key={i} />
+              ))
+            : projects.map((project, index) => (
+                <ProjectCard
+                  key={project.name}
+                  project={project}
+                  index={index}
+                />
+              ))}
         </div>
       </div>
 
@@ -199,6 +126,7 @@ const ProjectsSection: React.FC = () => {
 const ProjectCard = memo(
   ({ project, index }: { project: ProjectData; index: number }) => (
     <div className="group relative bg-black/40 border border-white/5 backdrop-blur-md rounded-lg overflow-hidden flex flex-col transition-all duration-500 hover:border-blue-500/40 hover:shadow-[0_0_30px_rgba(59,130,246,0.1)]">
+      {/* ... (All your existing Project Card JSX from previous step) ... */}
       <div className="flex justify-between items-center p-4 bg-white/5 border-b border-white/5">
         <div className="flex items-center gap-3">
           <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
