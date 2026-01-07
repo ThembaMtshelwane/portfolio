@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
             href="https://www.linkedin.com/in/themba-mtshelwane/"
             target="_blank"
             rel="noreferrer"
-            className="group p-8 bg-blue-500/5 border border-blue-500/20 rounded-2xl hover:border-blue-400/50 hover:bg-blue-500/10 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)]"
+            className="group p-8 bg-white/5 border border-white/10 rounded-2xl hover:border-blue-500/50 hover:bg-blue-500/5 transition-all duration-300"
           >
             <p className="text-[10px] font-mono text-blue-400 mb-2 tracking-widest uppercase italic">
               Professional_Network
