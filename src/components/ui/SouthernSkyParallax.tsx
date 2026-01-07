@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useCallback } from "react";
+import React, { useEffect, useRef, useCallback, useState } from "react";
 import About from "../../pages/About";
 import Hero from "../../pages/Hero";
 import Projects from "../../pages/Projects";
 import Contact from "../../pages/Contact";
+import LoadingScreen from "../../pages/LoadingScreen";
 
 interface Star {
   x: number;
@@ -45,6 +46,8 @@ const SouthernSkyParallax: React.FC = () => {
     h: window.innerHeight + 2000,
     dpr: Math.min(window.devicePixelRatio || 1, 2),
   });
+
+  const [isBooted, setIsBooted] = useState(false);
 
   /* ------------------ INIT DATA ------------------ */
   useEffect(() => {
@@ -249,13 +252,24 @@ const SouthernSkyParallax: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-[300vh] bg-black overflow-x-hidden">
-      <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none" />
-      <div className="relative z-10">
-        <Hero />
-        <About />
-        <Projects />
-        <Contact/>
+    <div className="relative bg-black overflow-x-hidden">
+      {/* 1. Show Loading Screen until sequence is finished */}
+      {!isBooted && <LoadingScreen onFinished={() => setIsBooted(true)} />}
+
+      {/* 2. Main Content stays hidden or inactive until booted */}
+      <div
+        className={`transition-opacity duration-1000 ${
+          isBooted ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none" />
+
+        <div className="relative z-10">
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
+        </div>
       </div>
     </div>
   );

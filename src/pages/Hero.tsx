@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
 
         {/* Large Faded "Background" Text */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-black text-white/2 select-none uppercase italic">
-          South
+          ORION
         </div>
       </div>
 

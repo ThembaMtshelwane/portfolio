@@ -25,10 +25,9 @@ const About: React.FC = () => {
               <p>
                 I'm an efficient Software Developer with a{" "}
                 <span className="text-white font-medium">
-                  BSc in Electrical Information Engineering
+                  BSc in Electrical Information Engineering{" "}
                 </span>
-                from the University of the Witwatersrand. I bridge the gap
-                between complex hardware logic and fluid digital experiences.
+                from the University of the Witwatersrand.
               </p>
 
               <p>
@@ -42,7 +41,7 @@ const About: React.FC = () => {
 
               <div className="p-6 bg-white/5 border-l-4 border-blue-500 backdrop-blur-md rounded-r-xl italic text-gray-400">
                 "Awarded 1st Place in the 2024/2025 Tshimologong Samsung Program
-                for technical excellence."
+                for outstanding performance."
               </div>
             </div>
           </div>
