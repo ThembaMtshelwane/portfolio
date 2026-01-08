@@ -38,7 +38,7 @@
         "Redux Toolkit",
         "RTK Query"
       ],
-      "summary": "The Hive is a full-stack web application designed to facilitate the management of students, mentors and the content associated with them. It allows Mentors to create, read, update and delete Assignments, Curricula, create Students and mark students assignments. Students can view assignments, curricula and mentors and complete their assignments.Demo users: email:mentor@domain.com and password thehive2025 ; email: karabo.molefe@example.com and password: thehive2025",
+      "summary": "The Hive is a full-stack web application designed to facilitate the management of students, mentors and the content associated with them. It allows Mentors to create, read, update and delete Assignments, Curricula, create Students and mark students assignments. Students can view assignments, curricula and mentors and complete their assignments. Demo users: email:mentor@domain.com and password: thehive2025 ; email: karabo.molefe@example.com and password: thehive2025",
       "responsibilities": [
         "Designed the frontend using Figma a design and inspiarations from the internet.",
         "Implemented the UI using React, TypeScript, and TailwindCSS.",

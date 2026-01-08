@@ -88,7 +88,7 @@ const Navbar: React.FC<{ lenis: any }> = ({ lenis }) => {
             </ul>
 
             <a
-              href="https://www.linkedin.com/in/themba-mtshelwane-17b502213/"
+              href="https://www.linkedin.com/in/themba-mtshelwane/"
               target="_blank"
               rel="noreferrer"
               className="px-4 py-2 border border-blue-500/30 rounded-sm text-[10px] font-mono text-blue-400 hover:bg-blue-500/10 hover:border-blue-400 transition-all uppercase tracking-widest shadow-[0_0_15px_rgba(59,130,246,0.1)]"
@@ -172,7 +172,7 @@ const Navbar: React.FC<{ lenis: any }> = ({ lenis }) => {
               }`}
             >
               <a
-                href="https://www.linkedin.com/in/themba-mtshelwane-17b502213/"
+                href="https://www.linkedin.com/in/themba-mtshelwane/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-full block text-center py-4 bg-blue-500/10 border border-blue-500/40 rounded-lg text-blue-400 font-mono text-sm tracking-widest"
