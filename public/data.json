@@ -68,7 +68,7 @@
         "Built a scalable Express backend with TypeScript, featuring global error handling and modular routing.",
         "Optimized user experience by implementing a custom 'Summoning' loading ritual for initial data fetching and a ScrollToTop utility for seamless navigation.",
         "Deployed a serverless Node.js architecture on Vercel with MongoDB Atlas integration.",
-        "TO DO: Implement payment logic and order history"
+        "TO DO: Implement payment logic, order history and admin pages"
       ],
       "website": "https://aegis-vault-seven.vercel.app/",
       "githublink": "",
