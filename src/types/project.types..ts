@@ -7,6 +7,4 @@ export type ProjectDataType = {
   githublink: string;
   image: string;
   status: string;
-  animation?: string;
-  gridPosition?: string;
 };

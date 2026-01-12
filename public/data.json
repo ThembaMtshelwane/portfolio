@@ -51,6 +51,31 @@
       "image": "./project-images/intern-hive/media2.webp"
     },
     {
+      "name": "Aegis Vault",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Redux Toolkit (RTK Query)",
+        "Tailwind CSS",
+        "Express",
+        "MongoDB",
+        "Vercel"
+      ],
+      "summary": "A high-immersion, mystical-themed e-commerce platform designed with a 'Cinzel' and 'Crimson Text' aesthetic. It features a responsive shopping cart and real-time quantity updates.",
+      "responsibilities": [
+        "Developed a synchronized cart system where UI updates optimistically while syncing with a backend API.",
+        "Implemented a 'Mystical Autumn' design system using custom Tailwind CSS utility layers for gradients, glows, and animations.",
+        "Built a scalable Express backend with TypeScript, featuring global error handling and modular routing.",
+        "Optimized user experience by implementing a custom 'Summoning' loading ritual for initial data fetching and a ScrollToTop utility for seamless navigation.",
+        "Deployed a serverless Node.js architecture on Vercel with MongoDB Atlas integration.",
+        "TO DO: Implement payment logic and order history"
+      ],
+      "website": "https://aegis-vault-seven.vercel.app/",
+      "githublink": "",
+      "image": "./project-images/aegis-vault/hero-bg.webp",
+      "status": "Deployed"
+    },
+    {
       "name": "Immergence Studios",
       "techStack": ["Typescript", "React JS", "Tailwind CSS"],
       "summary": "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content. This website represents an exercise in designing, from themes, picking colors to creating an engaing atmosphere.",
@@ -61,19 +86,6 @@
       "website": "https://immergence-studios-v2.vercel.app/",
       "githublink": "https://github.com/ThembaMtshelwane/immergence-studios-v2",
       "image": "./project-images/immergence-studios/immergence-studios-v2.webp"
-    },
-    {
-      "name": "Dronoticz",
-      "techStack": ["React", "Tailwind"],
-      "summary": "This project is a Single Page Application. It is a responsive website built using React and TailwindCSS. It is based on a Figma design. The website emphasizes modern web development practices, utilizing Flexbox and the position property to create a dynamic and responsive layout.",
-      "responsibilities": [
-        "Converting a given Figma design into a website",
-        "Responsive web design",
-        "Flexbox Layout"
-      ],
-      "website": "https://dronoticz-projects.vercel.app/",
-      "githublink": "https://github.com/ThembaMtshelwane/assignment-1",
-      "image": "./project-images/dronoticz/dronoticz1.webp"
     }
   ]
 }
