@@ -49,7 +49,8 @@ const About: React.FC = () => {
           {/* Right Column: "Orbital" Stats & Skills */}
           <div className="lg:col-span-5 grid grid-cols-1 gap-4 backdrop-blur-md">
             <a
-              href="https://themba-workshops.vercel.app/" target="_blank"
+              href="https://themba-workshops.vercel.app/software"
+              target="_blank"
               className="group p-8 bg-black/40 border border-white/10 rounded-3xl hover:border-blue-500/50 transition-all duration-500"
             >
               <h3 className="text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">
