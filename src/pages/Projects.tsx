@@ -96,10 +96,10 @@ const ProjectsSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-200">
           {loading
             ? // Show 4 Skeletons while loading
-              Array.from({ length: 4 }).map((_, i) => (
+              Array.from({ length: 3 }).map((_, i) => (
                 <ProjectSkeleton key={i} />
               ))
-            : projects.map((project, index) => (
+            : projects.slice(0, 3).map((project, index) => (
                 <ProjectCard
                   key={project.name}
                   project={project}

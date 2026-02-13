@@ -51,6 +51,18 @@
       "image": "./project-images/intern-hive/media2.webp"
     },
     {
+      "name": "Immergence Studios",
+      "techStack": ["Typescript", "React JS", "Tailwind CSS"],
+      "summary": "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content. This website represents an exercise in designing, from themes, picking colors to creating an engaing atmosphere.",
+      "responsibilities": [
+        "I designed the UI/UX.",
+        "Picking colors and the theme."
+      ],
+      "website": "https://immergence-studios-v2.vercel.app/",
+      "githublink": "https://github.com/ThembaMtshelwane/immergence-studios-v2",
+      "image": "./project-images/immergence-studios/immergence-studios-v2.webp"
+    },
+      {
       "name": "Aegis Vault",
       "techStack": [
         "React",
@@ -74,18 +86,6 @@
       "githublink": "",
       "image": "./project-images/aegis-vault/hero-bg.webp",
       "status": "Deployed"
-    },
-    {
-      "name": "Immergence Studios",
-      "techStack": ["Typescript", "React JS", "Tailwind CSS"],
-      "summary": "This is the official website for Immergence Studios, an animation studio focused on producing world-class animation content. This website represents an exercise in designing, from themes, picking colors to creating an engaing atmosphere.",
-      "responsibilities": [
-        "I designed the UI/UX.",
-        "Picking colors and the theme."
-      ],
-      "website": "https://immergence-studios-v2.vercel.app/",
-      "githublink": "https://github.com/ThembaMtshelwane/immergence-studios-v2",
-      "image": "./project-images/immergence-studios/immergence-studios-v2.webp"
     }
   ]
 }
