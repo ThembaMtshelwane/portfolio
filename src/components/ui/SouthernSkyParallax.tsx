@@ -58,7 +58,7 @@ const SouthernSkyParallax: React.FC = () => {
   /* ------------------ INIT DATA ------------------ */
   useEffect(() => {
     /* Background stars */
-    starsRef.current = Array.from({ length: 20 }, () => {
+    starsRef.current = Array.from({ length: 400 }, () => {
       const twinkles = Math.random() < 0.35;
       return {
         x: Math.random() * 100,
