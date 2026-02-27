@@ -13,7 +13,7 @@
         "RTK Query",
         "PayFast Integration"
       ],
-      "summary": "A platform for South African authors to showcase, crowdfund, and sell books.  ",
+      "summary": "A platform for South African authors to showcase, crowdfund, and sell books.  This is an MVP that showcases the core features of the platform, including book listings, crowdfunding campaigns, secure payment processing through PayFast and allows the owner to personally update the color theme, main website text and logo. The platform is designed to empower local authors and provide a seamless experience for readers.",
       "responsibilities": [
         "Managed end-to-end project lifecycle including planning, UI/UX design, implementation and testing.",
         "Lead early iterations of the frontend planning phase through effective communication via meetings  and task delegation within the team.",
@@ -62,7 +62,7 @@
       "githublink": "https://github.com/ThembaMtshelwane/immergence-studios-v2",
       "image": "./project-images/immergence-studios/immergence-studios-v2.webp"
     },
-      {
+    {
       "name": "Aegis Vault",
       "techStack": [
         "React",
