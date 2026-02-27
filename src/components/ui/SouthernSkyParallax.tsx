@@ -7,6 +7,7 @@ import LoadingScreen from "../../pages/LoadingScreen";
 import SkillsCarousel from "../../pages/SkillsCarousel";
 import Lenis from "lenis";
 import Navbar from "./Navbar";
+import Reccommendation from "../../pages/Reccommendation";
 
 interface Star {
   x: number;
@@ -319,6 +320,9 @@ const SouthernSkyParallax: React.FC = () => {
           <SkillsCarousel />
           <section id="projects">
             <Projects />
+          </section>
+          <section id="recommendations">
+            <Reccommendation />
           </section>
           <section id="contact">
             <Contact />
