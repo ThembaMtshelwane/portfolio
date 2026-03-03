@@ -11,7 +11,7 @@ const references: Reference[] = [
       "Themba demonstrated an exceptional commitment to growth, technical excellence, and teamwork. What truly set him apart was his leadership in collaborative environments — naturally taking initiative and supporting the success of the entire team.",
     name: "KATLEGO MOLALA",
     role: "Software Developer & Tech Mentor",
-    org: "Tshimologong, Wits University",
+    org: "Tshimologong - Digital Innovation Precinct",
   },
   {
     quote:
