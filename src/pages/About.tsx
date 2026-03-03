@@ -98,8 +98,8 @@ const About: React.FC = () => {
               </h3>
               <p className="text-gray-400 text-sm">
                 From crowdfunding platforms for authors to educational Binary
-                Tree systems, I build tools that solve terrestrial problems with
-                celestial precision.
+                Tree systems, I build tools that solve real-life problems with
+                passion and curiosity.
               </p>
             </div>
           </div>
