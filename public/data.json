@@ -22,7 +22,7 @@
         "Implemented state management and API interactions using Redux Toolkit and RTK Query.",
         "Integrated PayFast payment gateway for secure transactions."
       ],
-      "website": "https://mosele.vercel.app/",
+      "website": "https://mosele-ivory.vercel.app/",
       "githublink": "",
       "image": "./project-images/mosele/mosele-afrika.webp"
     },
