@@ -38,7 +38,7 @@
         "Redux Toolkit",
         "RTK Query"
       ],
-      "summary": "The Hive is a full-stack web application designed to facilitate the management of students, mentors and the content associated with them. It allows Mentors to create, read, update and delete Assignments, Curricula, create Students and mark students assignments. Students can view assignments, curricula and mentors and complete their assignments. Demo users: email:mentor@domain.com and password: thehive2025 ; email: karabo.molefe@example.com and password: thehive2025",
+      "summary": "The Hive is a full-stack web application designed to facilitate the management of students, mentors and the content associated with them. It allows Mentors to create, read, update and delete Assignments, Curricula, create Students and mark students assignments. Students can view assignments, curricula and mentors and complete their assignments. Demo users:mentor@domain.com, karabo.molefe@example.com and password: thehive2025",
       "responsibilities": [
         "Designed the frontend using Figma a design and inspiarations from the internet.",
         "Implemented the UI using React, TypeScript, and TailwindCSS.",
@@ -49,6 +49,28 @@
       "website": "https://thehive-neon.vercel.app/login",
       "githublink": "",
       "image": "./project-images/intern-hive/media2.webp"
+    },
+    {
+      "name": "Exam Prep LMS",
+      "techStack": [
+        "TypeScript",
+        "React JS",
+        "TailwindCSS",
+        "NodeJS",
+        "Express",
+        "MongoDB",
+        "Redux Toolkit",
+        "RTK Query"
+      ],
+      "summary": "A specialized Learning Management System tailored for exam preparation. The platform features practice tests, automated grading, and performance analytics. It includes a dedicated instructor dashboard for uploading quizzes and tracking course progress. Demo users: student@gmail.com, lecturer@gmail.com and password:123456",
+      "responsibilities": [
+        "Developed a dynamic quiz engine supporting multiple-choice questions.",
+        "Built a quiz performance dashboard using data visualization to track score trends over time.",
+        "Designed a responsive, distraction-free UI/UX to optimize the learning and testing environment."
+      ],
+      "website": "https://exam-prep-client.vercel.app/",
+      "githublink": "",
+      "image": "./project-images/exam-prep/lms-preview.webp"
     },
     {
       "name": "Immergence Studios",

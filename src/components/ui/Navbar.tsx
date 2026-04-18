@@ -64,7 +64,7 @@ const Navbar: React.FC<{ lenis: any }> = ({ lenis }) => {
                 Themba Mtshelwane
               </h1>
               <p className="text-blue-500/60 text-[9px] font-mono uppercase tracking-widest italic">
-                Fullstack_Dev // MERN_Specialist
+                Fullstack_Eng // MERN_Specialist
               </p>
             </div>
           </div>

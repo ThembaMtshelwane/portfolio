@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
           <div className="h-px w-12 bg-linear-to-r from-transparent to-blue-500 hidden md:block" />
           <p className="text-lg md:text-2xl text-gray-400 font-light tracking-[0.15em] uppercase italic">
             Fullstack{" "}
-            <span className="text-white font-bold not-italic">Developer</span>
+            <span className="text-white font-bold not-italic">Engineer</span>
           </p>
           <div className="h-px w-12 bg-linear-to-l from-transparent to-blue-500 hidden md:block" />
         </div>
