@@ -10,6 +10,8 @@ interface ProjectData {
   image: string;
 }
 
+const DISPLAY_PROJECTS =3
+
 // 1. Memoized Skeleton Component for Performance
 const ProjectSkeleton = () => (
   <div className="relative p-8 bg-white/5 border border-white/10 rounded-lg overflow-hidden min-h-100">
@@ -96,11 +98,11 @@ const ProjectsSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-200">
           {loading
             ? // Show 4 Skeletons while loading
-              Array.from({ length: 4 }).map((_, i) => (
+              Array.from({ length: DISPLAY_PROJECTS }).map((_, i) => (
                 <ProjectSkeleton key={i} />
               ))
             : projects
-                .slice(0, 4)
+                .slice(0, DISPLAY_PROJECTS)
                 .map((project, index) => (
                   <ProjectCard
                     key={project.name}
