@@ -95,7 +95,7 @@ const ProjectsSection: React.FC = () => {
         )}
 
         {/* Dynamic Responsive Left-to-Right Masonry */}
-        <div className="flex flex-col sm:flex-row gap-12 min-h-50 items-start">
+        <div className="flex flex-col lg:flex-row gap-12 min-h-50 items-start">
           {loading ? (
             // Show Skeletons while loading
             Array.from({ length: DISPLAY_PROJECTS }).map((_, i) => (
@@ -121,7 +121,7 @@ const ProjectsSection: React.FC = () => {
               </div>
 
               {/* Right Column (Items 2, 4, 6...) */}
-              <div className="flex-1 flex flex-col gap-12 w-full hidden sm:flex">
+              <div className="flex-1 flex flex-col gap-12 w-full  sm:flex">
                 {projects
                   .slice(0, DISPLAY_PROJECTS)
                   .filter((_, index) => index % 2 !== 0)
@@ -188,14 +188,15 @@ const ProjectCard = memo(
               CODE_BASE
             </a>
           )}
-          <a
-            href={project.website}
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-400 hover:text-blue-200 transition-colors text-xs font-mono"
-          >
-            LAUNCH_LIVE ↗
-          </a>
+          {project.website && (
+            <a
+              href={project.website}
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-400 hover:text-blue-200 transition-colors text-xs font-mono"
+            >
+              LAUNCH_LIVE ↗
+            </a>)}
         </div>
       </div>
 
