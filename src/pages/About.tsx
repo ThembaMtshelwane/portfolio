@@ -48,7 +48,7 @@ const About: React.FC = () => {
 
           {/* Right Column: "Orbital" Stats & Skills */}
           <div className="lg:col-span-5 grid grid-cols-1 gap-4 backdrop-blur-md">
-            <a
+            {/* <a
               href="https://themba-workshops.vercel.app/software"
               target="_blank"
               className="group p-8 bg-black/40 border border-white/10 rounded-3xl hover:border-blue-500/50 transition-all duration-500"
@@ -62,7 +62,7 @@ const About: React.FC = () => {
               <p className="text-gray-500 mt-1">
                 Associate Certification Candidate
               </p>
-            </a>
+            </a> */}
 
             <div className="grid grid-cols-2 gap-4">
               <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
