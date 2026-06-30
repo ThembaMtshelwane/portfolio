@@ -10,7 +10,7 @@ interface ProjectData {
   image: string;
 }
 
-const DISPLAY_PROJECTS =3
+const DISPLAY_PROJECTS = 4;
 
 // 1. Memoized Skeleton Component for Performance
 const ProjectSkeleton = () => (
@@ -94,22 +94,61 @@ const ProjectsSection: React.FC = () => {
           </div>
         )}
 
-        {/* Dynamic Grid / Skeleton Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-200">
-          {loading
-            ? // Show 4 Skeletons while loading
-              Array.from({ length: DISPLAY_PROJECTS }).map((_, i) => (
-                <ProjectSkeleton key={i} />
-              ))
-            : projects
-                .slice(0, DISPLAY_PROJECTS)
-                .map((project, index) => (
-                  <ProjectCard
-                    key={project.name}
-                    project={project}
-                    index={index}
-                  />
-                ))}
+        {/* Dynamic Responsive Left-to-Right Masonry */}
+        <div className="flex flex-col sm:flex-row gap-12 min-h-50 items-start">
+          {loading ? (
+            // Show Skeletons while loading
+            Array.from({ length: DISPLAY_PROJECTS }).map((_, i) => (
+              <div key={i} className="flex-1">
+                <ProjectSkeleton />
+              </div>
+            ))
+          ) : (
+            <>
+              {/* Left Column (Items 1, 3, 5...) */}
+              <div className="flex-1 flex flex-col gap-12 w-full">
+                {projects
+                  .slice(0, DISPLAY_PROJECTS)
+                  .filter((_, index) => index % 2 === 0)
+                  .map((project, index) => (
+                    <ProjectCard
+                      key={project.name}
+                      project={project}
+                      // Keep original global index for numbering
+                      index={index * 2}
+                    />
+                  ))}
+              </div>
+
+              {/* Right Column (Items 2, 4, 6...) */}
+              <div className="flex-1 flex flex-col gap-12 w-full hidden sm:flex">
+                {projects
+                  .slice(0, DISPLAY_PROJECTS)
+                  .filter((_, index) => index % 2 !== 0)
+                  .map((project, index) => (
+                    <ProjectCard
+                      key={project.name}
+                      project={project}
+                      index={index * 2 + 1}
+                    />
+                  ))}
+              </div>
+
+              {/* Mobile Fallback: Direct list so it behaves on 1-column mobile views */}
+              <div className="flex flex-col gap-12 w-full sm:hidden">
+                {projects
+                  .slice(0, DISPLAY_PROJECTS)
+                  .filter((_, index) => index % 2 !== 0) // Pull the remaining items sequentially on mobile
+                  .map((project, index) => (
+                    <ProjectCard
+                      key={project.name}
+                      project={project}
+                      index={index * 2 + 1}
+                    />
+                  ))}
+              </div>
+            </>
+          )}
         </div>
       </div>
 

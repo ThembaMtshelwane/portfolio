@@ -1,28 +1,33 @@
 {
   "projectData": [
     {
-      "name": "The Hive",
+      "name": "FieldSync Bot",
       "techStack": [
         "TypeScript",
-        "React JS",
-        "TailwindCSS",
-        "NodeJS",
+        "Node.js",
         "Express",
-        "MongoDB",
-        "Redux Toolkit",
-        "RTK Query"
+        "Evolution API",
+        "PostgreSQL",
+        "Prisma",
+        "Azure App Service",
+        "Azure Container Instance",
+        "Azure Container Registry",
+        "Azure Key Vault",
+        "Azure Storage Queues",
+        "GitHub Actions"
       ],
-      "summary": "The Hive is a full-stack web application designed to facilitate the management of students, mentors and the content associated with them. It allows Mentors to create, read, update and delete Assignments, Curricula, create Students and mark students assignments. Students can view assignments, curricula and mentors and complete their assignments. Demo users:mentor@domain.com, karabo.molefe@example.com and password: thehive2025",
+      "summary": "A WhatsApp-based field delay reporting system built for Bushtec Creations, connecting construction site teams directly to the Bushtec CostHub operational platform. Field workers send /delay or /update commands in a project WhatsApp group — the bot privately guides them through a structured conversation, collects delay codes, duration, notes, and HD media evidence, then delivers a structured JSON payload to CostHub automatically. Includes a 4-stage retry pipeline with dead-letter queue handling and full Azure cloud deployment. Delivered as a 6-week freelance contract for a South African construction operations company.",
       "responsibilities": [
-        "Designed the frontend using Figma a design and inspiarations from the internet.",
-        "Implemented the UI using React, TypeScript, and TailwindCSS.",
-        "Implemented the functionality through Redux Toolkit and RTK Query.",
-        "End to end testing of the application",
-        "Contributed to the design and implementation of the backend API endpoint"
+        "Architected a stateless WhatsApp integration layer using Evolution API v2.3.7 and Node.js/TypeScript Express — bot acts as a pure transport layer with no local domain storage.",
+        "Implemented a multi-turn DM conversation engine with in-memory session management, numbered text menus, and structured data collection across /delay and /update command flows.",
+        "Built a 4-stage retry pipeline using Azure Storage Queues (30s → 2min → 10min → 1hr) with dead-letter queue and integration alert webhook for persistent delivery failures.",
+        "Executed a mid-project architecture pivot from Meta Cloud API and WhatsApp Flows to Evolution API after Meta Business verification exceeded the contractual buffer — maintained delivery schedule with zero timeline impact.",
+        "Provisioned and deployed full Azure infrastructure across six services: PostgreSQL Flexible Server, Azure Container Registry, Azure Container Instance, App Service, Key Vault, and Storage Queues.",
+        "Configured CI/CD pipeline via GitHub Actions using Azure Service Principal authentication with automated TypeScript build and deployment on push to main."
       ],
-      "website": "https://thehive-neon.vercel.app/login",
+      "website": "",
       "githublink": "",
-      "image": "./project-images/intern-hive/media2.webp"
+      "image": "./project-images/fieldsync/fieldsync-bot.webp"
     },
     {
       "name": "Exam Prep LMS",
@@ -45,6 +50,30 @@
       "website": "https://exam-prep-client.vercel.app/",
       "githublink": "",
       "image": "./project-images/exam-prep/lms-preview.webp"
+    },
+    {
+      "name": "The Hive",
+      "techStack": [
+        "TypeScript",
+        "React JS",
+        "TailwindCSS",
+        "NodeJS",
+        "Express",
+        "MongoDB",
+        "Redux Toolkit",
+        "RTK Query"
+      ],
+      "summary": "The Hive is a full-stack web application designed to facilitate the management of students, mentors and the content associated with them. It allows Mentors to create, read, update and delete Assignments, Curricula, create Students and mark students assignments. Students can view assignments, curricula and mentors and complete their assignments. Demo users:mentor@domain.com, karabo.molefe@example.com and password: thehive2025",
+      "responsibilities": [
+        "Designed the frontend using Figma a design and inspiarations from the internet.",
+        "Implemented the UI using React, TypeScript, and TailwindCSS.",
+        "Implemented the functionality through Redux Toolkit and RTK Query.",
+        "End to end testing of the application",
+        "Contributed to the design and implementation of the backend API endpoint"
+      ],
+      "website": "https://thehive-neon.vercel.app/login",
+      "githublink": "",
+      "image": "./project-images/intern-hive/media2.webp"
     },
     {
       "name": "Immergence Studios",
