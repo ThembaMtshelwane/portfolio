@@ -34,43 +34,40 @@ const Reccommendation = () => {
           <div className="flex-1 h-px bg-linear-to-r from-[rgba(74,158,255,0.35)] to-transparent" />
         </div>
 
-     
-          <h2 className="mb-20 text-6xl md:text-8xl font-black text-white italic uppercase tracking-tighter">
-            Mission {" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-100">
-              reports
-            </span>
-          </h2>
-  
+        <h2 className="mb-20 text-6xl md:text-8xl font-black text-white italic uppercase tracking-tighter">
+          Mission{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-100">
+            reports
+          </span>
+        </h2>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(74,158,255,0.12)]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-2 bg-[rgba(74,158,255,0.12)]">
           {references.map((ref) => (
             <div
               key={ref.name}
               className="bg-[#080d1a] hover:bg-[rgba(74,158,255,0.03)] transition-colors duration-300 p-12 flex flex-col gap-9"
             >
               {/* Quote */}
-              <p className="font-mono text-[13.5px] leading-[1.95] text-[#7a9db8] italic flex-1">
+              <p className="font-mono  leading-[1.95] text-[#7a9db8] italic flex-1">
                 <span className="text-[rgba(74,158,255,0.4)] not-italic text-base">
-                  "{" "}
+                  "{""}
                 </span>
                 {ref.quote}
                 <span className="text-[rgba(74,158,255,0.4)] not-italic text-base">
-                  {" "}
-                  "
+                  {""}"
                 </span>
               </p>
 
               {/* Person */}
               <div className="border-t border-[rgba(74,158,255,0.15)] pt-6">
-                <p className="font-mono text-[13px] font-bold text-[#e0f0ff] tracking-[0.1em] mb-1.5">
+                <p className="font-mono  font-bold text-[#e0f0ff] tracking-WIDEST mb-1.5">
                   {ref.name}
                 </p>
-                <p className="font-mono text-[11px] text-[#4a7a96] tracking-[0.06em] leading-relaxed">
+                <p className="font-mono text-[13px] text-[#4a7a96] tracking-[0.06em] leading-relaxed">
                   {ref.role}
                 </p>
-                <p className="font-mono text-[11px] text-[#4a9eff] tracking-[0.06em] opacity-70">
+                <p className="font-mono text-[13px] text-[#4a9eff] tracking-[0.06em] opacity-70">
                   {ref.org}
                 </p>
               </div>

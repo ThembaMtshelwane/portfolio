@@ -196,15 +196,16 @@ const ProjectCard = memo(
               className="text-blue-400 hover:text-blue-200 transition-colors text-xs font-mono"
             >
               LAUNCH_LIVE ↗
-            </a>)}
+            </a>
+          )}
         </div>
       </div>
 
       <div className="p-6 md:p-8 space-y-6">
-        <h3 className="text-3xl font-bold text-white mb-2 group-hover:tracking-wide transition-all duration-500">
+        <h3 className="text-3xl font-bold font-mono text-white mb-2 group-hover:tracking-wide transition-all duration-500">
           {project.name}
         </h3>
-        <p className="text-gray-400 text-sm leading-relaxed font-light italic">
+        <p className="text-gray-400 font-mono leading-relaxed ">
           {project.summary}
         </p>
 
@@ -224,10 +225,7 @@ const ProjectCard = memo(
           </h4>
           <ul className="grid grid-cols-1 gap-2">
             {project.responsibilities.map((task, i) => (
-              <li
-                key={i}
-                className="flex gap-3 text-xs text-gray-400 font-mono"
-              >
+              <li key={i} className="flex gap-3  text-gray-400 font-mono">
                 <span className="text-blue-500/50">[{i}]</span> {task}
               </li>
             ))}
@@ -238,7 +236,7 @@ const ProjectCard = memo(
           {project.techStack.map((tech) => (
             <span
               key={tech}
-              className="text-[10px] font-mono px-2 py-1 bg-blue-500/5 border border-blue-500/20 text-blue-300 rounded hover:bg-blue-500/20 transition-all"
+              className="text-[13px] font-mono px-2 py-1 bg-blue-500/5 border border-blue-500/20 text-blue-300 rounded hover:bg-blue-500/20 transition-all cursor-default"
             >
               {tech}
             </span>
